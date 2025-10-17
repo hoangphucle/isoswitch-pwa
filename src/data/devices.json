@@ -1,0 +1,24 @@
+﻿[
+  {
+    "id": 1,
+    "device_name": "Motor Bơm nước 1A",
+    "kks_code": "M03-MTR-0101",
+    "cable_code": "CBL-03-0452",
+    "breaker_code": "MCCB-03-12",
+    "panel_code": "MCC-1A",
+    "bus_name": "400V Bus A",
+    "location": "Dãy MCC khu vực Turbine tầng 0",
+    "remark": "Cô lập tại CB-03-12, MCC-1A"
+  },
+  {
+    "id": 2,
+    "device_name": "Motor Quạt Hút 2B",
+    "kks_code": "M03-MTR-0202",
+    "cable_code": "CBL-03-0453",
+    "breaker_code": "MCCB-04-01",
+    "panel_code": "MCC-2B",
+    "bus_name": "400V Bus B",
+    "location": "Dãy MCC khu vực Boiler tầng 1",
+    "remark": "Cô lập tại CB-04-01, MCC-2B"
+  }
+]
