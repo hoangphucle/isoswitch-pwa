@@ -1,38 +1,37 @@
-﻿const CACHE_NAME = "isoswitch-cache-v1";
-const ASSETS = [
-  "/",
-  "/index.html",
-  "/manifest.json",
-  "/src/main.jsx",
-  "/src/App.jsx",
-  "/src/styles.css",
-  "/src/data/devices.json"
-];
+﻿const CACHE_NAME = 'isoswitch-cache-v2';
 
-self.addEventListener("install", (event) => {
+self.addEventListener('install', (event) => {
   self.skipWaiting();
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll([
+        '/',
+        '/index.html',
+        '/manifest.json',
+        '/icons/icon-192.png',
+        '/icons/icon-512.png'
+      ]))
+      .catch(err => console.error('Cache addAll failed', err))
   );
 });
 
-self.addEventListener("activate", (event) => {
-  event.waitUntil(self.clients.claim());
-});
-
 self.addEventListener('fetch', (event) => {
-  const url = event.request.url;
-  if (!url.startsWith('http')) return;
-  
+  // Bỏ qua các request chrome-extension hoặc không phải http/https
+  if (!event.request.url.startsWith('http')) return;
+
   event.respondWith(
-    caches.open('my-cache').then((cache) => {
-      return cache.match(event.request).then((response) => {
-        return response || fetch(event.request).then((res) => {
-          cache.put(event.request, res.clone());
-          return res;
-        });
+    caches.match(event.request).then((cached) => {
+      return cached || fetch(event.request).then((res) => {
+        // Chỉ cache nếu request thành công
+        if (res.status === 200) {
+          caches.open(CACHE_NAME).then(cache => {
+            cache.put(event.request, res.clone());
+          });
+        }
+        return res;
+      }).catch(() => {
+        console.warn('Fetch failed, offline fallback');
       });
     })
   );
 });
-
