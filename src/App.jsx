@@ -1,5 +1,5 @@
 ﻿import React, { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import SearchForm from "./components/SearchForm"
 import ResultCard from "./components/ResultCard"
 import { searchDevices } from "./utils/search"
@@ -28,60 +28,93 @@ export default function App() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen px-4 py-8 text-center bg-[#0A0F1A] font-[system-ui] text-white">
-     {/* Header */}
-<motion.div
-  className="flex flex-col items-center justify-center mb-6"
-  initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
->
-  {/* Logo + Tên */}
-  <div className="flex items-center justify-center gap-2 mb-1">
-    <motion.img
-      src="/icons/logo.png"
-      alt="IsoSwitch logo"
-      className="w-8 h-8 sm:w-9 sm:h-9 object-contain rounded-lg drop-shadow-[0_0_6px_rgba(0,122,255,0.45)]"
-      initial={{ scale: 0.8, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
-    />
-    <h1 className="text-lg sm:text-xl font-semibold tracking-tight text-white leading-tight">
-      IsoSwitch
-    </h1>
-  </div>
+    <div className="flex flex-col items-center justify-between min-h-screen px-4 py-8 text-center 
+      bg-gradient-to-br from-[#0b1220] via-[#121c33] to-[#1b2948] 
+      font-[system-ui] text-white overflow-hidden relative">
+      
+      {/* Hiệu ứng ánh sáng nền */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(0,102,255,0.15),transparent_60%)] pointer-events-none"></div>
 
-  <p className="text-gray-400 text-xs sm:text-sm font-light">
-    Tra cứu máy cắt cần cô lập
-  </p>
-</motion.div>
+      {/* Header + Search */}
+      <div className="flex flex-col items-center justify-center flex-grow w-full">
+        {/* Logo */}
+        <motion.div
+          className="flex flex-col items-center mb-6"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <motion.img
+            src="/icons/logo.png"
+            alt="IsoSwitch logo"
+            className="w-24 h-24 sm:w-28 sm:h-28 object-contain rounded-3xl shadow-[0_0_30px_rgba(0,122,255,0.3)]"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          />
+          <h1 className="mt-4 text-3xl sm:text-4xl font-semibold tracking-tight text-white drop-shadow-lg">
+            IsoSwitch
+          </h1>
+          <p className="text-gray-400 text-sm sm:text-base font-light mt-1">
+            Tra cứu máy cắt cần cô lập
+          </p>
+        </motion.div>
 
-      {/* Form tìm kiếm */}
-      <div className="w-full max-w-md mb-6">
-        <SearchForm onSearch={handleSearch} />
-      </div>
-
-      {/* Thông báo offline */}
-      {offline && (
-        <div className="text-yellow-400 text-sm mb-4">
-          ⚠️ Đang ở chế độ Offline — dữ liệu cục bộ vẫn dùng được
-        </div>
-      )}
-
-      {/* Kết quả tìm kiếm */}
-      <div className="w-full max-w-3xl mt-4">
-        {results.length === 0 ? (
-          <div className="text-gray-500 mt-6 bg-gray-800/30 rounded-xl p-4 border border-gray-700/40">
-            Chưa có kết quả. Thử nhập mã KKS hoặc mã cáp.
+        {/* Form tìm kiếm */}
+        <motion.div
+          className="w-full max-w-md mb-8"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.2)] p-2">
+            <SearchForm onSearch={handleSearch} />
           </div>
-        ) : (
-          results.map((dev) => <ResultCard key={dev.id} device={dev} />)
+        </motion.div>
+
+        {/* Offline notice */}
+        {offline && (
+          <motion.div
+            className="text-yellow-400 text-sm mb-3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+          >
+            ⚠️ Đang ở chế độ Offline — dữ liệu cục bộ vẫn dùng được
+          </motion.div>
         )}
+
+        {/* Kết quả */}
+        <div className="w-full max-w-3xl mt-4 space-y-3">
+          <AnimatePresence>
+            {results.length === 0 ? (
+              <motion.div
+                key="no-result"
+                className="text-gray-400 mt-6 bg-white/5 rounded-2xl p-5 border border-white/10 backdrop-blur-sm"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
+                Chưa có kết quả. Thử nhập mã KKS hoặc mã cáp.
+              </motion.div>
+            ) : (
+              results.map((dev) => (
+                <motion.div
+                  key={dev.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <ResultCard device={dev} />
+                </motion.div>
+              ))
+            )}
+          </AnimatePresence>
+        </div>
       </div>
 
       {/* Footer */}
-      <footer className="text-gray-600 text-xs sm:text-sm mt-10">
-        © 2025 IsoSwitch — Tra cứu thiết bị cô lập. PX VH2
+      <footer className="text-gray-500 text-xs sm:text-sm mt-10 mb-2 opacity-70">
+        © 2025 IsoSwitch — PX VH2
       </footer>
     </div>
   )
