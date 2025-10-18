@@ -11,11 +11,9 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches)
 
   useEffect(() => {
-    // Detect changes in OS theme
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
     const handler = e => setDarkMode(e.matches)
     mediaQuery.addEventListener("change", handler)
-
     return () => mediaQuery.removeEventListener("change", handler)
   }, [])
 
@@ -47,19 +45,36 @@ export default function App() {
     }
   }, [])
 
+  // -----------------------------
+  // Tra cứu và loại bỏ duplicate
+  // -----------------------------
   function handleSearch(q) {
     if (!q) { setResults([]); setHighlight([]); return }
     if (loading) { alert("Dữ liệu đang load, vui lòng chờ..."); return }
 
     const maArr = q.split(",").map(m => String(m).trim().toUpperCase()).filter(Boolean)
     setHighlight(maArr)
-    const r = devices.filter(d => maArr.includes(d.kks) || maArr.includes(d.cap))
-    setResults(r)
+
+    const filtered = devices.filter(d => maArr.includes(d.kks) || maArr.includes(d.cap))
+
+    // Loại bỏ trùng lặp: key = kks + cap + tu
+    const uniqueMap = {}
+    filtered.forEach(d => {
+      const key = `${d.kks}_${d.cap}_${d.tu}`
+      if (!uniqueMap[key]) uniqueMap[key] = d
+    })
+
+    setResults(Object.values(uniqueMap))
   }
 
+  // -----------------------------
+  // Colors chuẩn iOS
+  // -----------------------------
   const bgColor = darkMode ? "#1c1c1e" : "#f7f7f7"
+  const cardBgColor = darkMode ? "#2a2a2a" : "white"
+  const borderColor = darkMode ? "#3a3a3c" : "#e0e0e0"
   const textColor = darkMode ? "#f5f5f7" : "#222"
-  const mutedColor = darkMode ? "#a1a1a6" : "#666"
+  const mutedColor = darkMode ? "#8e8e93" : "#666"
 
   return (
     <div style={{
@@ -69,16 +84,27 @@ export default function App() {
       fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
       color: textColor
     }}>
+      {/* Header */}
       <div className="header" style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
         <div className="logo" style={{
           width: "48px", height: "48px", borderRadius: "12px",
           backgroundColor: "#007bff", color: "white",
           display: "flex", alignItems: "center", justifyContent: "center",
           fontWeight: "bold", fontSize: "20px"
-        }}>IS</div>
+        }}>
+          ⚡
+        </div>
         <div>
-          <h1 style={{ margin: 0, fontSize: "24px" }}>IsoSwitch</h1>
-          <div style={{ color: mutedColor, fontSize: "14px" }}>Tra cứu máy cắt cần cô lập</div>
+          <h1 style={{ margin: 0, fontSize: "24px", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" }}>IsoFind</h1>
+          <div style={{
+            color: mutedColor,
+            fontSize: "14px",
+            fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif",
+            fontWeight: 400,
+            letterSpacing: "0.5px"
+          }}>
+            Find & Isolate Fast
+          </div>
         </div>
       </div>
 
@@ -101,7 +127,7 @@ export default function App() {
             marginTop: 8,
             padding: "14px",
             borderRadius: "12px",
-            backgroundColor: darkMode ? "#2c2c2e" : "white",
+            backgroundColor: cardBgColor,
             boxShadow: darkMode ? "0 2px 6px rgba(0,0,0,0.4)" : "0 2px 6px rgba(0,0,0,0.08)",
             fontSize: "16px"
           }}>
@@ -115,7 +141,7 @@ export default function App() {
       </div>
 
       <footer style={{ color: mutedColor, marginTop: 20, textAlign: "center", fontSize: "14px" }}>
-        © IsoSwitch — GENCO1
+        © IsoFind — By Vận hành 2 - Công ty Nhiệt điện Duyên Hải
       </footer>
     </div>
   )

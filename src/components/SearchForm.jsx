@@ -1,47 +1,41 @@
 ﻿import React, { useState } from "react"
 
 export default function SearchForm({ onSearch, darkMode, mutedColor }) {
-  const [ma, setMa] = useState("")
+  const [query, setQuery] = useState("")
 
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault()
-    if (onSearch) onSearch(ma)
+    onSearch(query)
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginTop: 12, marginBottom: 12, display: "flex", flexWrap: "wrap", gap: "8px" }}>
+    <form onSubmit={handleSubmit} style={{ display: "flex", gap: "12px", marginBottom: "12px" }}>
       <input
         type="text"
-        value={ma}
-        onChange={(e) => setMa(e.target.value)}
-        placeholder="Nhập mã KKS hoặc mã cáp, phân tách bằng dấu phẩy"
+        value={query}
+        onChange={e => setQuery(e.target.value)}
+        placeholder="Nhập mã KKS hoặc mã cáp, ngăn cách bằng dấu ,"
         style={{
-          flex: "1 1 300px",
-          padding: "10px 12px",
-          borderRadius: "10px",
-          border: `1px solid ${darkMode ? "#444" : "#ccc"}`,
+          flex: 1,
+          padding: "12px 14px",
+          borderRadius: "12px",
+          border: `1px solid ${darkMode ? "#3a3a3c" : "#ccc"}`,
+          backgroundColor: darkMode ? "#2a2a2a" : "white",
+          color: darkMode ? "white" : "black",
           fontSize: "16px",
-          outline: "none",
-          color: darkMode ? "#f5f5f7" : "#222",
-          backgroundColor: darkMode ? "#2c2c2e" : "white",
-          boxShadow: darkMode ? "inset 0 1px 2px rgba(255,255,255,0.05)" : "inset 0 1px 2px rgba(0,0,0,0.1)"
+          fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif"
         }}
       />
-      <button
-        type="submit"
-        style={{
-          padding: "10px 16px",
-          borderRadius: "10px",
-          border: "none",
-          backgroundColor: "#007bff",
-          color: "white",
-          fontSize: "16px",
-          cursor: "pointer",
-          boxShadow: "0 2px 6px rgba(0,0,0,0.15)"
-        }}
-      >
-        Tra cứu
-      </button>
+      <button type="submit" style={{
+        padding: "12px 18px",
+        borderRadius: "12px",
+        border: "none",
+        backgroundColor: "#007bff",
+        color: "white",
+        fontWeight: 600,
+        cursor: "pointer",
+        fontSize: "16px"
+      }}>Search</button>
     </form>
   )
 }
