@@ -1,25 +1,42 @@
 ﻿import React from "react"
 
-export default function ResultCard({device}){
-  if(!device) return null
-  return (
-    <div className="card">
-      <h3 style={{margin:0,marginBottom:8}}>{device.device_name}</h3>
-      <div className="result-row">
-        <div className="kv"><strong>KKS</strong><div style={{color:"var(--muted)"}}>{device.kks_code}</div></div>
-        <div className="kv"><strong>Mã cáp</strong><div style={{color:"var(--muted)"}}>{device.cable_code}</div></div>
-        <div className="kv"><strong>Máy cắt</strong><div style={{color:"var(--muted)"}}>{device.breaker_code}</div></div>
-        <div className="kv"><strong>Tủ</strong><div style={{color:"var(--muted)"}}>{device.panel_code}</div></div>
-      </div>
-      <div style={{marginTop:12}} className="kv"><strong>Bus</strong><div style={{color:"var(--muted)"}}>{device.bus_name}</div></div>
-      <div style={{marginTop:8}} className="kv"><strong>Vị trí</strong><div style={{color:"var(--muted)"}}>{device.location}</div></div>
-      <div style={{marginTop:8}} className="kv"><strong>Ghi chú</strong><div style={{color:"var(--muted)"}}>{device.remark}</div></div>
+export default function ResultCard({ device, highlight, darkMode }) {
+  const bgColor = darkMode ? "#2c2c2e" : "white"
+  const borderColor = darkMode ? "#444" : "#e0e0e0"
+  const textColor = darkMode ? "#f5f5f7" : "#222"
 
-      <div style={{display:"flex",gap:8,marginTop:12}}>
-        <button className="btn">📊 Xem sơ đồ</button>
-        <button className="btn" style={{background:"#10b981"}}>📍 Vị trí tủ</button>
-        <button className="btn" style={{background:"#f59e0b"}}>🔖 In phiếu cô lập</button>
-      </div>
+  // Màu highlight nhạt, trong suốt hơn
+  const highlightStyle = {
+    backgroundColor: darkMode ? "rgba(255, 229, 77, 0.3)" : "rgba(255, 235, 59, 0.3)",
+    borderRadius: "4px",
+    padding: "2px 4px"
+  }
+
+  const kksHighlighted = highlight.includes(device.kks) ? (
+    <span style={highlightStyle}>{device.kks}</span>
+  ) : device.kks
+
+  const capHighlighted = highlight.includes(device.cap) ? (
+    <span style={{ ...highlightStyle, fontWeight: "600" }}>{device.cap}</span>
+  ) : (
+    <span style={{ fontWeight: "600", color: textColor }}>{device.cap}</span>
+  )
+
+  return (
+    <div style={{
+      padding: "14px 18px",
+      marginBottom: "12px",
+      borderRadius: "14px",
+      border: `1px solid ${borderColor}`,
+      backgroundColor: bgColor,
+      boxShadow: darkMode ? "0 3px 8px rgba(0,0,0,0.4)" : "0 3px 8px rgba(0,0,0,0.12)",
+      fontSize: "16px",
+      lineHeight: "1.5",
+    }}>
+      <p style={{ margin: 0 }}><strong>KKS:</strong> {kksHighlighted}</p>
+      <p style={{ margin: 0 }}><strong>Cap:</strong> {capHighlighted}</p>
+      <p style={{ margin: 0 }}><strong>Tủ:</strong> {device.tu}</p>
+      <p style={{ margin: 0 }}><strong>Phụ tải:</strong> {device.ten}</p>
     </div>
   )
 }
