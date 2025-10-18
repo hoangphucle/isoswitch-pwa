@@ -5,11 +5,11 @@ import ResultCard from "./components/ResultCard";
 import "./components/Button.css";
 
 // nút chuẩn iOS
-const iosButtonStyle = ({ active = false, color = "#0a84ff", large = false }) => ({
-  padding: large ? "14px 24px" : "10px 18px",
+const iosButtonStyle = ({ active = false, color = "#0a84ff" }) => ({
+  padding: "16px 20px",
   borderRadius: "16px",
   border: "none",
-  fontSize: large ? "16px" : "14px",
+  fontSize: "16px",
   fontWeight: "500",
   color: "#fff",
   background: active ? color : "#3a3a3c",
@@ -17,18 +17,24 @@ const iosButtonStyle = ({ active = false, color = "#0a84ff", large = false }) =>
     ? "0 4px 12px rgba(0,0,0,0.3)"
     : "0 2px 6px rgba(0,0,0,0.2)",
   cursor: "pointer",
-  transition: "all 0.2s ease-in-out",
+  transition: "transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out",
   outline: "none",
   userSelect: "none",
-  position: "relative",
-  overflow: "hidden",
   flex: 1,
+  textAlign: "center",
 });
 
-const iosButtonEffect = (e) => (e.currentTarget.style.transform = "scale(0.97)");
-const iosButtonReset = (e) => (e.currentTarget.style.transform = "scale(1)");
+// hiệu ứng nhấn giống iPhone
+const iosButtonPress = (e) => {
+  e.currentTarget.style.transform = "scale(0.95)";
+  e.currentTarget.style.boxShadow = "0 2px 4px rgba(0,0,0,0.3)";
+};
+const iosButtonRelease = (e) => {
+  e.currentTarget.style.transform = "scale(1)";
+  e.currentTarget.style.boxShadow = "";
+};
 
-// ripple effect
+// ripple effect (nếu muốn giữ)
 const createRipple = (e) => {
   const button = e.currentTarget;
   const circle = document.createElement("span");
@@ -108,7 +114,7 @@ export default function App() {
 
     const merged = {};
     filtered.forEach(d => {
-      const key = d.kks + "|" + d.cap; // avoid duplicates
+      const key = d.kks + "|" + d.cap;
       if (!merged[key]) merged[key] = { ...d };
     });
 
@@ -116,12 +122,6 @@ export default function App() {
   };
 
   const variants = { hidden: { x: 300, opacity: 0 }, visible: { x: 0, opacity: 1 }, exit: { x: -300, opacity: 0 } };
-
-  const handleBack = (prevLayer) => {
-    setResults([]);
-    setHighlight([]);
-    setLayer(prevLayer);
-  };
 
   return (
     <div
@@ -133,8 +133,8 @@ export default function App() {
         color: "#fff",
         backgroundColor: "#1c1c1e",
         padding: "12px",
-        maxWidth: "480px", // cố định mobile
-        margin: "0 auto", // canh giữa màn hình máy tính
+        maxWidth: "900px",
+        margin: "0 auto"
       }}
     >
       {/* Header */}
@@ -160,20 +160,20 @@ export default function App() {
               <h2>Chọn chế độ</h2>
               <div style={{ display: "flex", gap: "12px", marginTop: "12px" }}>
                 <button
-                  style={{ ...iosButtonStyle({ active: true, large: true }), background: "linear-gradient(135deg,#0a84ff,#5ac8fa)" }}
-                  onClick={() => setLayer("searchDevice")}
-                  onMouseDown={iosButtonEffect}
-                  onMouseUp={iosButtonReset}
-                  onMouseLeave={iosButtonReset}
+                  style={{ ...iosButtonStyle({ active: true }), background: "linear-gradient(135deg,#0a84ff,#5ac8fa)" }}
+                  onClick={(e) => { createRipple(e); setLayer("searchDevice"); }}
+                  onMouseDown={iosButtonPress}
+                  onMouseUp={iosButtonRelease}
+                  onMouseLeave={iosButtonRelease}
                 >
                   Cô lập thiết bị
                 </button>
                 <button
-                  style={{ ...iosButtonStyle({ active: false, large: true }) }}
-                  onClick={() => setLayer("ciSelect")}
-                  onMouseDown={iosButtonEffect}
-                  onMouseUp={iosButtonReset}
-                  onMouseLeave={iosButtonReset}
+                  style={iosButtonStyle({ active: false })}
+                  onClick={(e) => { createRipple(e); setLayer("ciSelect"); }}
+                  onMouseDown={iosButtonPress}
+                  onMouseUp={iosButtonRelease}
+                  onMouseLeave={iosButtonRelease}
                 >
                   Cô lập nguồn C&I
                 </button>
@@ -188,22 +188,22 @@ export default function App() {
                 {["lo", "may", "ecb"].map(s => (
                   <button
                     key={s}
-                    style={{ ...iosButtonStyle({ active: ciSheet === s, large: true }), background: ciSheet === s ? "linear-gradient(135deg,#0a84ff,#5ac8fa)" : "#3a3a3c" }}
+                    style={{ ...iosButtonStyle({ active: ciSheet === s }), background: ciSheet === s ? "linear-gradient(135deg,#0a84ff,#5ac8fa)" : "#3a3a3c" }}
                     onClick={(e) => { createRipple(e); setCiSheet(s); setLayer("searchCI"); }}
-                    onMouseDown={iosButtonEffect}
-                    onMouseUp={iosButtonReset}
-                    onMouseLeave={iosButtonReset}
+                    onMouseDown={iosButtonPress}
+                    onMouseUp={iosButtonRelease}
+                    onMouseLeave={iosButtonRelease}
                   >
                     {s.toUpperCase()}
                   </button>
                 ))}
               </div>
               <button
-                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30", large: true }), background: "#ff3b30" }}
-                onClick={() => handleBack("mode")}
-                onMouseDown={iosButtonEffect}
-                onMouseUp={iosButtonReset}
-                onMouseLeave={iosButtonReset}
+                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30" }}
+                onClick={(e) => { createRipple(e); setLayer("mode"); setResults([]); }}
+                onMouseDown={iosButtonPress}
+                onMouseUp={iosButtonRelease}
+                onMouseLeave={iosButtonRelease}
               >
                 Quay lại
               </button>
@@ -214,15 +214,15 @@ export default function App() {
             <motion.div key="searchDevice" initial="hidden" animate="visible" exit="exit" variants={variants} transition={{ duration: 0.3 }}>
               <SearchForm onSearch={(q) => handleSearch(q, "device")} />
               <div style={{ marginTop: "12px" }}>
-                {results.length === 0 && <div style={{ color: "#8e8e93" }}>Nhập mã KKS hoặc mã cáp</div>}
+                {results.length === 0 && <div style={{ color: "#8e8e93", textAlign:"left" }}>Nhập mã KKS hoặc mã cáp</div>}
                 {results.map((dev) => <ResultCard key={dev.kks + dev.cap} device={dev} highlight={highlight} />)}
               </div>
               <button
-                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30", large: true }), background: "#ff3b30", marginTop: "12px" }}
-                onClick={() => handleBack("mode")}
-                onMouseDown={iosButtonEffect}
-                onMouseUp={iosButtonReset}
-                onMouseLeave={iosButtonReset}
+                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30", marginTop: "12px" }}
+                onClick={(e) => { createRipple(e); setLayer("mode"); setResults([]); }}
+                onMouseDown={iosButtonPress}
+                onMouseUp={iosButtonRelease}
+                onMouseLeave={iosButtonRelease}
               >
                 Quay lại
               </button>
@@ -234,15 +234,15 @@ export default function App() {
               <SearchForm onSearch={(q) => handleSearch(q, "ci")} />
               <div style={{ marginTop: "12px" }}>
                 {loading && <div>Loading...</div>}
-                {results.length === 0 && !loading && <div style={{ color: "#8e8e93" }}>Nhập KKS hoặc CAP</div>}
+                {results.length === 0 && !loading && <div style={{ color: "#8e8e93", textAlign:"left" }}>Nhập mã KKS hoặc mã cáp</div>}
                 {results.map((dev) => <ResultCard key={dev.kks + dev.cap} device={dev} highlight={highlight} />)}
               </div>
               <button
-                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30", large: true }), background: "#ff3b30", marginTop: "12px" }}
-                onClick={() => handleBack("ciSelect")}
-                onMouseDown={iosButtonEffect}
-                onMouseUp={iosButtonReset}
-                onMouseLeave={iosButtonReset}
+                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30", marginTop: "12px" }}
+                onClick={(e) => { createRipple(e); setLayer("ciSelect"); setResults([]); }}
+                onMouseDown={iosButtonPress}
+                onMouseUp={iosButtonRelease}
+                onMouseLeave={iosButtonRelease}
               >
                 Quay lại
               </button>
@@ -250,8 +250,6 @@ export default function App() {
           )}
         </AnimatePresence>
       </div>
-
-
 
       {/* Footer cố định */}
       <footer style={{ textAlign: "center", color: "#8e8e93", padding: "12px 0", fontSize: "12px" }}>
