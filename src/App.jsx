@@ -6,10 +6,10 @@ import "./components/Button.css";
 
 // nút chuẩn iOS
 const iosButtonStyle = ({ active = false, color = "#0a84ff" }) => ({
-  padding: "10px 18px",
+  padding: "16px 24px", // tăng padding → nút to hơn
   borderRadius: "16px",
   border: "none",
-  fontSize: "14px",
+  fontSize: "16px",     // tăng font
   fontWeight: "500",
   color: "#fff",
   background: active ? color : "#3a3a3c",
@@ -22,12 +22,13 @@ const iosButtonStyle = ({ active = false, color = "#0a84ff" }) => ({
   userSelect: "none",
   position: "relative",
   overflow: "hidden",
+  flex: 1, // mỗi nút chiếm đều không gian
+  textAlign: "center",
 });
 
 const iosButtonEffect = (e) => (e.currentTarget.style.transform = "scale(0.97)");
 const iosButtonReset = (e) => (e.currentTarget.style.transform = "scale(1)");
 
-// ripple effect
 const createRipple = (e) => {
   const button = e.currentTarget;
   const circle = document.createElement("span");
@@ -42,9 +43,8 @@ const createRipple = (e) => {
 };
 
 export default function App() {
-  const [layer, setLayer] = useState("mode"); // mode / ciSelect / searchDevice / searchCI
-  const [ciSheet, setCiSheet] = useState("lo"); // lo / may / ecb
-
+  const [layer, setLayer] = useState("mode"); 
+  const [ciSheet, setCiSheet] = useState("lo"); 
   const [devices, setDevices] = useState([]);
   const [cis, setCIs] = useState({ lo: [], may: [], ecb: [] });
   const [results, setResults] = useState([]);
@@ -63,22 +63,15 @@ export default function App() {
   });
 
   useEffect(() => {
-    fetch("/devices.json")
-      .then((r) => r.json())
-      .then((d) => setDevices(d.map(normalize)))
-      .catch(console.error);
-
-    fetch("/C&I.json")
-      .then((r) => r.json())
-      .then((d) => {
-        setCIs({
-          lo: (d["lò"] || []).map(normalize),
-          may: (d["máy"] || []).map(normalize),
-          ecb: (d["ecb"] || []).map(normalize),
-        });
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
+    fetch("/devices.json").then((r) => r.json()).then((d) => setDevices(d.map(normalize))).catch(console.error);
+    fetch("/C&I.json").then((r) => r.json()).then((d) => {
+      setCIs({
+        lo: (d["lò"] || []).map(normalize),
+        may: (d["máy"] || []).map(normalize),
+        ecb: (d["ecb"] || []).map(normalize),
+      });
+      setLoading(false);
+    }).catch(() => setLoading(false));
 
     function onOnline() { setOffline(false); }
     function onOffline() { setOffline(true); }
@@ -99,19 +92,17 @@ export default function App() {
     const maArr = q.split(",").map((m) => m.trim().toUpperCase()).filter(Boolean);
     setHighlight(maArr);
 
-    let source = [];
-    if (type === "device") source = devices;
-    else if (type === "ci") source = cis[ciSheet] || [];
-
+    let source = type === "device" ? devices : cis[ciSheet] || [];
     const filtered = source.filter(d => maArr.includes(d.kks) || maArr.includes(d.cap));
-
     const merged = {};
-    filtered.forEach(d => {
-      const key = d.kks + "|" + d.cap; // avoid duplicates
-      if (!merged[key]) merged[key] = { ...d };
-    });
-
+    filtered.forEach(d => { merged[d.kks + "|" + d.cap] = { ...d }; });
     setResults(Object.values(merged));
+  };
+
+  const handleBack = (targetLayer) => {
+    setResults([]);    // xoá kết quả khi quay lại
+    setHighlight([]);
+    setLayer(targetLayer);
   };
 
   const variants = { hidden: { x: 300, opacity: 0 }, visible: { x: 0, opacity: 1 }, exit: { x: -300, opacity: 0 } };
@@ -125,16 +116,15 @@ export default function App() {
         fontFamily: "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif",
         color: "#fff",
         backgroundColor: "#1c1c1e",
-        padding: "12px"
+        padding: "12px",
+        maxWidth: "480px", // cố định kích thước trên mobile
+        margin: "0 auto",
+        boxSizing: "border-box"
       }}
     >
       {/* Header */}
       <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
-        <img
-          src="/logo-spark.svg"
-          alt="IsoFind Logo"
-          style={{ width: "40px", height: "40px", objectFit: "contain" }}
-        />
+        <img src="/logo-spark.svg" alt="IsoFind Logo" style={{ width: "40px", height: "40px", objectFit: "contain" }} />
         <div>
           <h1 style={{ margin: 0, fontSize: "18px" }}>IsoFind</h1>
           <div style={{ color: "#8e8e93", fontSize: "12px" }}>Find & Isolate Fast</div>
@@ -150,24 +140,13 @@ export default function App() {
             <motion.div key="mode" initial="hidden" animate="visible" exit="exit" variants={variants} transition={{ duration: 0.3 }}>
               <h2>Chọn chế độ</h2>
               <div style={{ display: "flex", gap: "12px", marginTop: "12px" }}>
-                <button
-                  style={{ ...iosButtonStyle({ active: true }), background: "linear-gradient(135deg,#0a84ff,#5ac8fa)" }}
+                <button style={{ ...iosButtonStyle({ active: true }), background: "linear-gradient(135deg,#0a84ff,#5ac8fa)" }}
                   onClick={(e) => { createRipple(e); setLayer("searchDevice"); }}
-                  onMouseDown={iosButtonEffect}
-                  onMouseUp={iosButtonReset}
-                  onMouseLeave={iosButtonReset}
-                >
-                  Cô lập thiết bị
-                </button>
-                <button
-                  style={iosButtonStyle({ active: false })}
+                  onMouseDown={iosButtonEffect} onMouseUp={iosButtonReset} onMouseLeave={iosButtonReset}>Cô lập thiết bị</button>
+
+                <button style={iosButtonStyle({ active: false })}
                   onClick={(e) => { createRipple(e); setLayer("ciSelect"); }}
-                  onMouseDown={iosButtonEffect}
-                  onMouseUp={iosButtonReset}
-                  onMouseLeave={iosButtonReset}
-                >
-                  Cô lập nguồn C&I
-                </button>
+                  onMouseDown={iosButtonEffect} onMouseUp={iosButtonReset} onMouseLeave={iosButtonReset}>Cô lập nguồn C&I</button>
               </div>
             </motion.div>
           )}
@@ -177,27 +156,14 @@ export default function App() {
               <h2>Chọn nguồn C&I</h2>
               <div style={{ display: "flex", gap: "12px", marginBottom: "12px" }}>
                 {["lo", "may", "ecb"].map(s => (
-                  <button
-                    key={s}
-                    style={{ ...iosButtonStyle({ active: ciSheet === s }), background: ciSheet === s ? "linear-gradient(135deg,#0a84ff,#5ac8fa)" : "#3a3a3c" }}
+                  <button key={s} style={{ ...iosButtonStyle({ active: ciSheet === s }), background: ciSheet === s ? "linear-gradient(135deg,#0a84ff,#5ac8fa)" : "#3a3a3c" }}
                     onClick={(e) => { createRipple(e); setCiSheet(s); setLayer("searchCI"); }}
-                    onMouseDown={iosButtonEffect}
-                    onMouseUp={iosButtonReset}
-                    onMouseLeave={iosButtonReset}
-                  >
-                    {s.toUpperCase()}
-                  </button>
+                    onMouseDown={iosButtonEffect} onMouseUp={iosButtonReset} onMouseLeave={iosButtonReset}>{s.toUpperCase()}</button>
                 ))}
               </div>
-              <button
-                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30" }}
-                onClick={(e) => { createRipple(e); setLayer("mode"); }}
-                onMouseDown={iosButtonEffect}
-                onMouseUp={iosButtonReset}
-                onMouseLeave={iosButtonReset}
-              >
-                Quay lại
-              </button>
+              <button style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30" }}
+                onClick={(e) => { createRipple(e); handleBack("mode"); }}
+                onMouseDown={iosButtonEffect} onMouseUp={iosButtonReset} onMouseLeave={iosButtonReset}>Quay lại</button>
             </motion.div>
           )}
 
@@ -208,15 +174,9 @@ export default function App() {
                 {results.length === 0 && <div style={{ color: "#8e8e93" }}>Nhập mã KKS hoặc mã cáp</div>}
                 {results.map((dev) => <ResultCard key={dev.kks + dev.cap} device={dev} highlight={highlight} />)}
               </div>
-              <button
-                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30", marginTop: "12px" }}
-                onClick={(e) => { createRipple(e); setLayer("mode"); }}
-                onMouseDown={iosButtonEffect}
-                onMouseUp={iosButtonReset}
-                onMouseLeave={iosButtonReset}
-              >
-                Quay lại
-              </button>
+              <button style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30", marginTop: "12px" }}
+                onClick={(e) => { createRipple(e); handleBack("mode"); }}
+                onMouseDown={iosButtonEffect} onMouseUp={iosButtonReset} onMouseLeave={iosButtonReset}>Quay lại</button>
             </motion.div>
           )}
 
@@ -228,15 +188,9 @@ export default function App() {
                 {results.length === 0 && !loading && <div style={{ color: "#8e8e93" }}>Nhập KKS hoặc CAP</div>}
                 {results.map((dev) => <ResultCard key={dev.kks + dev.cap} device={dev} highlight={highlight} />)}
               </div>
-              <button
-                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30", marginTop: "12px" }}
-                onClick={(e) => { createRipple(e); setLayer("ciSelect"); }}
-                onMouseDown={iosButtonEffect}
-                onMouseUp={iosButtonReset}
-                onMouseLeave={iosButtonReset}
-              >
-                Quay lại
-              </button>
+              <button style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30", marginTop: "12px" }}
+                onClick={(e) => { createRipple(e); handleBack("ciSelect"); }}
+                onMouseDown={iosButtonEffect} onMouseUp={iosButtonReset} onMouseLeave={iosButtonReset}>Quay lại</button>
             </motion.div>
           )}
         </AnimatePresence>
