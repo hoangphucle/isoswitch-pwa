@@ -97,29 +97,36 @@ export default function App() {
     };
   }, []);
 
-  const handleSearch = (q, type) => {
-    if (!q) {
-      setResults([]);
-      setHighlight([]);
-      return;
+ const handleSearch = (q, type) => {
+  if (!q) {
+    setResults([]);
+    setHighlight([]);
+    return;
+  }
+  const maArr = q.split(",").map((m) => m.trim().toUpperCase()).filter(Boolean);
+  setHighlight(maArr);
+
+  let source = [];
+  if (type === "device") source = devices;
+  else if (type === "ci") source = cis[ciSheet] || [];
+
+  const filtered = source.filter(d => maArr.includes(d.kks) || maArr.includes(d.cap));
+
+  const merged = {};
+  filtered.forEach(d => {
+    const key = d.kks + "|" + d.tu; // gộp theo KKS + TỦ
+    if (!merged[key]) {
+      merged[key] = { ...d, caps: d.cap ? [d.cap] : [] }; // tạo mảng caps
+    } else {
+      if (d.cap && !merged[key].caps.includes(d.cap)) {
+        merged[key].caps.push(d.cap);
+      }
     }
-    const maArr = q.split(",").map((m) => m.trim().toUpperCase()).filter(Boolean);
-    setHighlight(maArr);
+  });
 
-    let source = [];
-    if (type === "device") source = devices;
-    else if (type === "ci") source = cis[ciSheet] || [];
+  setResults(Object.values(merged));
+};
 
-    const filtered = source.filter(d => maArr.includes(d.kks) || maArr.includes(d.cap));
-
-    const merged = {};
-    filtered.forEach(d => {
-      const key = d.kks + "|" + d.cap;
-      if (!merged[key]) merged[key] = { ...d };
-    });
-
-    setResults(Object.values(merged));
-  };
 
   const variants = { hidden: { x: 300, opacity: 0 }, visible: { x: 0, opacity: 1 }, exit: { x: -300, opacity: 0 } };
 
