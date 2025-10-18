@@ -1,131 +1,53 @@
-﻿import React, { useEffect, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+﻿import React, {useEffect, useState} from "react"
 import SearchForm from "./components/SearchForm"
 import ResultCard from "./components/ResultCard"
 import { searchDevices } from "./utils/search"
 import devicesData from "./data/devices.json"
 
-export default function App() {
-  const [devices, setDevices] = useState([])
-  const [results, setResults] = useState([])
-  const [offline, setOffline] = useState(!navigator.onLine)
+export default function App(){
+  const [devices,setDevices]=useState([])
+  const [results,setResults]=useState([])
+  const [offline,setOffline]=useState(!navigator.onLine)
 
-  useEffect(() => {
+  useEffect(()=>{
     setDevices(devicesData)
-    const onOnline = () => setOffline(false)
-    const onOffline = () => setOffline(true)
+
+    function onOnline(){setOffline(false)}
+    function onOffline(){setOffline(true)}
     window.addEventListener("online", onOnline)
     window.addEventListener("offline", onOffline)
-    return () => {
+    return ()=>{
       window.removeEventListener("online", onOnline)
       window.removeEventListener("offline", onOffline)
     }
-  }, [])
+  },[])
 
-  function handleSearch(q) {
+  function handleSearch(q){
     const r = searchDevices(devices, q)
     setResults(r)
   }
 
   return (
-    <div className="flex flex-col items-center justify-between min-h-screen px-4 py-8 text-center 
-      bg-gradient-to-br from-[#0b1220] via-[#121c33] to-[#1b2948] 
-      font-[system-ui] text-white overflow-hidden relative">
-      
-      {/* Hiệu ứng ánh sáng nền */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(0,102,255,0.15),transparent_60%)] pointer-events-none"></div>
-
-      {/* Header + Search */}
-      <div className="flex flex-col items-center justify-center flex-grow w-full">
-        
-        {/* Header */}
-        <motion.div
-          className="flex flex-col items-center justify-center mb-6"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          {/* Logo + Tên cùng hàng */}
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <motion.div
-              className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 
-              flex items-center justify-center shadow-[0_0_20px_rgba(0,122,255,0.35)]"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <img
-                src="/icons/logo.png"
-                alt="IsoSwitch logo"
-                className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
-              />
-            </motion.div>
-
-            <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white leading-tight drop-shadow-md">
-              IsoSwitch
-            </h1>
-          </div>
-
-          <p className="text-gray-400 text-sm sm:text-base font-light">
-            Tra cứu máy cắt cần cô lập
-          </p>
-        </motion.div>
-
-        {/* Form tìm kiếm */}
-        <motion.div
-          className="w-full max-w-md mb-8"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <div className="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl shadow-[0_4px_30px_rgba(0,0,0,0.2)] p-2">
-            <SearchForm onSearch={handleSearch} />
-          </div>
-        </motion.div>
-
-        {/* Offline notice */}
-        {offline && (
-          <motion.div
-            className="text-yellow-400 text-sm mb-3"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          >
-            ⚠️ Đang ở chế độ Offline — dữ liệu cục bộ vẫn dùng được
-          </motion.div>
-        )}
-
-        {/* Kết quả */}
-        <div className="w-full max-w-3xl mt-4 space-y-3">
-          <AnimatePresence>
-            {results.length === 0 ? (
-              <motion.div
-                key="no-result"
-                className="text-gray-400 mt-6 bg-white/5 rounded-2xl p-5 border border-white/10 backdrop-blur-sm"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-              >
-                Chưa có kết quả. Thử nhập mã KKS hoặc mã cáp.
-              </motion.div>
-            ) : (
-              results.map((dev) => (
-                <motion.div
-                  key={dev.id}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <ResultCard device={dev} />
-                </motion.div>
-              ))
-            )}
-          </AnimatePresence>
+    <div className="app">
+      <div className="header">
+        <div className="logo">IS</div>
+        <div>
+          <h1 style={{margin:0}}>IsoSwitch</h1>
+          <div style={{color:"var(--muted)"}}>Tra cứu máy cắt cần cô lập</div>
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="text-gray-500 text-xs sm:text-sm mt-10 mb-2 opacity-70">
-        © 2025 IsoSwitch — PX VH2
+      <SearchForm onSearch={handleSearch} />
+
+      {offline && <div className="offline">⚠️ Đang ở chế độ Offline — dữ liệu cục bộ vẫn dùng được</div>}
+
+      <div style={{marginTop:12}}>
+        {results.length===0 && <div style={{color:"var(--muted)",marginTop:8}} className="card">Chưa có kết quả. Thử nhập mã KKS hoặc mã cáp.</div>}
+        {results.map(dev=> <ResultCard key={dev.id} device={dev} />)}
+      </div>
+
+      <footer style={{color:"var(--muted)",marginTop:20}}>
+        © IsoSwitch — GENCO1
       </footer>
     </div>
   )
