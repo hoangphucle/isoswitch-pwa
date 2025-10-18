@@ -39,7 +39,7 @@ export default function App() {
         <motion.img
           src="/icons/logo.png"
           alt="IsoSwitch logo"
-          className="w-[25vw] max-w-32 object-contain drop-shadow-[0_0_10px_rgba(0,114,188,0.4)] mb-4"
+	className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain drop-shadow-[0_0_10px_rgba(0,114,188,0.4)] mb-4"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
