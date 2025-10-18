@@ -2,8 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-// ⚙️ Cấu hình Vite PWA
+// ⚙️ Cấu hình Vite PWA cho IsoSwitch
 export default defineConfig({
+  base: './', // 🔥 BẮT BUỘC: giúp các file tĩnh load đúng trên Vercel
+
   plugins: [
     react(),
     VitePWA({
@@ -39,9 +41,18 @@ export default defineConfig({
             purpose: 'any maskable'
           }
         ]
+      },
+      workbox: {
+        skipWaiting: true,
+        clientsClaim: true
       }
     })
   ],
+
+  build: {
+    outDir: 'dist',
+  },
+
   server: {
     port: 5173,
     open: true
