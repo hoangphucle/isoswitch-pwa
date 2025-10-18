@@ -37,27 +37,36 @@ export default function App() {
 
       {/* Header + Search */}
       <div className="flex flex-col items-center justify-center flex-grow w-full">
-        {/* Logo */}
+        
+        {/* Header */}
         <motion.div
-          className="flex flex-col items-center mb-6"
+          className="flex flex-col items-center justify-center mb-6"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.img
-  src="/icons/logo.png"
-  alt="IsoSwitch logo"
-  className="w-[80px] h-[80px] sm:w-[96px] sm:h-[96px] max-w-[100px] max-h-[100px] object-contain rounded-xl drop-shadow-[0_0_10px_rgba(0,122,255,0.4)]"
-  style={{ width: "80px", height: "80px" }}
-  initial={{ scale: 0.9, opacity: 0 }}
-  animate={{ scale: 1, opacity: 1 }}
-  transition={{ duration: 0.6, delay: 0.2 }}
-/>
+          {/* Logo + Tên cùng hàng */}
+          <div className="flex items-center justify-center gap-3 mb-2">
+            <motion.div
+              className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 
+              flex items-center justify-center shadow-[0_0_20px_rgba(0,122,255,0.35)]"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <img
+                src="/icons/logo.png"
+                alt="IsoSwitch logo"
+                className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
+              />
+            </motion.div>
 
-          <h1 className="mt-4 text-3xl sm:text-4xl font-semibold tracking-tight text-white drop-shadow-lg">
-            IsoSwitch
-          </h1>
-          <p className="text-gray-400 text-sm sm:text-base font-light mt-1">
+            <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white leading-tight drop-shadow-md">
+              IsoSwitch
+            </h1>
+          </div>
+
+          <p className="text-gray-400 text-sm sm:text-base font-light">
             Tra cứu máy cắt cần cô lập
           </p>
         </motion.div>

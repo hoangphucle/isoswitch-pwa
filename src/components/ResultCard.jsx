@@ -1,25 +1,61 @@
 ﻿import React from "react"
+import { motion } from "framer-motion"
+import { Cable, Zap, MapPin, Info } from "lucide-react"
 
-export default function ResultCard({device}){
-  if(!device) return null
+
+export default function ResultCard({ device }) {
   return (
-    <div className="card">
-      <h3 style={{margin:0,marginBottom:8}}>{device.device_name}</h3>
-      <div className="result-row">
-        <div className="kv"><strong>KKS</strong><div style={{color:"var(--muted)"}}>{device.kks_code}</div></div>
-        <div className="kv"><strong>Mã cáp</strong><div style={{color:"var(--muted)"}}>{device.cable_code}</div></div>
-        <div className="kv"><strong>Máy cắt</strong><div style={{color:"var(--muted)"}}>{device.breaker_code}</div></div>
-        <div className="kv"><strong>Tủ</strong><div style={{color:"var(--muted)"}}>{device.panel_code}</div></div>
+    <motion.div
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-5 mb-4 
+      shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.3)] 
+      transition-all duration-300"
+    >
+      {/* Header */}
+      <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center gap-2">
+          <Zap className="text-blue-400 w-5 h-5" />
+          <h2 className="text-lg sm:text-xl font-semibold text-white tracking-tight">
+            {device.name || "Thiết bị không tên"}
+          </h2>
+        </div>
+        <span className="text-xs sm:text-sm text-gray-400 italic">
+          {device.kks || "—"}
+        </span>
       </div>
-      <div style={{marginTop:12}} className="kv"><strong>Bus</strong><div style={{color:"var(--muted)"}}>{device.bus_name}</div></div>
-      <div style={{marginTop:8}} className="kv"><strong>Vị trí</strong><div style={{color:"var(--muted)"}}>{device.location}</div></div>
-      <div style={{marginTop:8}} className="kv"><strong>Ghi chú</strong><div style={{color:"var(--muted)"}}>{device.remark}</div></div>
 
-      <div style={{display:"flex",gap:8,marginTop:12}}>
-        <button className="btn">📊 Xem sơ đồ</button>
-        <button className="btn" style={{background:"#10b981"}}>📍 Vị trí tủ</button>
-        <button className="btn" style={{background:"#f59e0b"}}>🔖 In phiếu cô lập</button>
+      {/* Body */}
+      <div className="space-y-2 text-left">
+        {device.cable && (
+          <p className="flex items-center gap-2 text-gray-300">
+            <Cable className="w-4 h-4 text-indigo-300" />
+            <span>Mã cáp: {device.cable}</span>
+          </p>
+        )}
+        {device.location && (
+          <p className="flex items-center gap-2 text-gray-300">
+            <MapPin className="w-4 h-4 text-pink-300" />
+            <span>Vị trí: {device.location}</span>
+          </p>
+        )}
+        {device.note && (
+          <p className="flex items-center gap-2 text-gray-300">
+            <Info className="w-4 h-4 text-teal-300" />
+            <span>Ghi chú: {device.note}</span>
+          </p>
+        )}
       </div>
-    </div>
+
+      {/* Footer */}
+      <div className="mt-3 text-right">
+        <span className="text-xs text-gray-500 italic">
+          Cập nhật gần đây • IsoSwitch
+        </span>
+      </div>
+    </motion.div>
   )
 }
