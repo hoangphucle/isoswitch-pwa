@@ -2,57 +2,32 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-// ⚙️ Cấu hình Vite PWA cho IsoSwitch
 export default defineConfig({
-  base: './', // 🔥 BẮT BUỘC: giúp các file tĩnh load đúng trên Vercel
-
+  base: './', // ⚠️ Quan trọng để Vercel load đúng
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: [
-        'favicon.ico',
-        'robots.txt',
-        'apple-touch-icon.png'
-      ],
+      includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: 'IsoSwitch - Tra cứu cô lập thiết bị',
         short_name: 'IsoSwitch',
         description: 'Ứng dụng tra cứu và cô lập thiết bị trong nhà máy nhiệt điện',
-        start_url: '/',
+        start_url: './',
         display: 'standalone',
         background_color: '#111827',
         theme_color: '#2563eb',
         icons: [
-          {
-            src: '/icons/icon-192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: '/icons/icon-512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          },
-          {
-            src: '/icons/icon-512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable'
-          }
+          { src: './icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: './icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: './icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' }
         ]
-      },
-      workbox: {
-        skipWaiting: true,
-        clientsClaim: true
       }
     })
   ],
-
   build: {
-    outDir: 'dist',
+    outDir: 'dist'
   },
-
   server: {
     port: 5173,
     open: true
