@@ -1,13 +1,13 @@
 ﻿import React from "react";
 
 const icons = {
-  kks: "🆔",
-  cap: "🔌",
-  macb: "⚡",
-  ten: "📌",
-  vitri: "📍",
-  tu: "🗄️",
-  thanhcai: "🟦",
+  kks: "🆔 MÃ KKS: ",
+  cap: "🔌MÃ CÁP: ",
+  macb: "⚡MÃ CB",
+  ten: "📌TÊN THIẾT BỊ: ",
+  vitri: "📍VỊ TRÍ: ",
+  tu: "🗄️NGĂN TỦ: ",
+  thanhcai: "🟦 THANH CÁI CẤP: ",
 };
 
 export default function ResultCard({ device, highlight = [] }) {
