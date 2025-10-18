@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // ⚙️ Cấu hình Vite PWA cho IsoSwitch
 export default defineConfig({
-  base: './', // 🔥 BẮT BUỘC: giúp các file tĩnh load đúng trên Vercel
+  base: '/', // 🔥 BẮT BUỘC: giúp các file tĩnh load đúng trên Vercel
 
   plugins: [
     react(),
