@@ -28,7 +28,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen px-4 py-8 text-center bg-[#0B1120]">
+    <div className="flex flex-col items-center justify-start min-h-screen px-4 py-8 text-center bg-[#0A0F1A] font-[system-ui] text-white">
       {/* Header */}
       <motion.div
         className="flex flex-col items-center justify-center mb-8"
@@ -36,18 +36,22 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <motion.img
-          src="/icons/logo.png"
-          alt="IsoSwitch logo"
-	className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain drop-shadow-[0_0_10px_rgba(0,114,188,0.4)] mb-4"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        />
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0072BC] tracking-tight">
-          IsoSwitch EVN
-        </h1>
-        <p className="text-gray-400 mt-2 text-sm sm:text-base">
+        {/* Logo + Tên */}
+        <div className="flex items-center justify-center space-x-3 mb-2">
+          <motion.img
+            src="/icons/logo.png"
+            alt="IsoSwitch logo"
+            className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 object-contain rounded-xl drop-shadow-[0_0_8px_rgba(0,122,255,0.45)]"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          />
+          <h1 className="text-[1.9rem] sm:text-[2.2rem] font-semibold tracking-tight text-white">
+            IsoSwitch
+          </h1>
+        </div>
+
+        <p className="text-gray-400 text-[0.9rem] sm:text-base font-light">
           Tra cứu máy cắt cần cô lập
         </p>
       </motion.div>
@@ -67,7 +71,7 @@ export default function App() {
       {/* Kết quả tìm kiếm */}
       <div className="w-full max-w-3xl mt-4">
         {results.length === 0 ? (
-          <div className="text-gray-500 mt-6 bg-gray-800/40 rounded-lg p-4 border border-gray-700">
+          <div className="text-gray-500 mt-6 bg-gray-800/30 rounded-xl p-4 border border-gray-700/40">
             Chưa có kết quả. Thử nhập mã KKS hoặc mã cáp.
           </div>
         ) : (
