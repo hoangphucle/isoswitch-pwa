@@ -1,148 +1,251 @@
-﻿import React, { useEffect, useState } from "react"
-import SearchForm from "./components/SearchForm"
-import ResultCard from "./components/ResultCard"
+﻿import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import SearchForm from "./components/SearchForm";
+import ResultCard from "./components/ResultCard";
+import "./components/Button.css";
+
+// nút chuẩn iOS
+const iosButtonStyle = ({ active = false, color = "#0a84ff" }) => ({
+  padding: "10px 18px",
+  borderRadius: "16px",
+  border: "none",
+  fontSize: "14px",
+  fontWeight: "500",
+  color: "#fff",
+  background: active ? color : "#3a3a3c",
+  boxShadow: active
+    ? "0 4px 12px rgba(0,0,0,0.3)"
+    : "0 2px 6px rgba(0,0,0,0.2)",
+  cursor: "pointer",
+  transition: "all 0.2s ease-in-out",
+  outline: "none",
+  userSelect: "none",
+  position: "relative",
+  overflow: "hidden",
+});
+
+const iosButtonEffect = (e) => (e.currentTarget.style.transform = "scale(0.97)");
+const iosButtonReset = (e) => (e.currentTarget.style.transform = "scale(1)");
+
+// ripple effect
+const createRipple = (e) => {
+  const button = e.currentTarget;
+  const circle = document.createElement("span");
+  circle.className = "ripple";
+  const rect = button.getBoundingClientRect();
+  const size = Math.max(rect.width, rect.height);
+  circle.style.width = circle.style.height = size + "px";
+  circle.style.left = e.clientX - rect.left - size / 2 + "px";
+  circle.style.top = e.clientY - rect.top - size / 2 + "px";
+  button.appendChild(circle);
+  setTimeout(() => circle.remove(), 600);
+};
 
 export default function App() {
-  const [devices, setDevices] = useState([])
-  const [results, setResults] = useState([])
-  const [offline, setOffline] = useState(!navigator.onLine)
-  const [loading, setLoading] = useState(true)
-  const [highlight, setHighlight] = useState([])
-  const [darkMode, setDarkMode] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches)
+  const [layer, setLayer] = useState("mode"); // mode / ciSelect / searchDevice / searchCI
+  const [ciSheet, setCiSheet] = useState("lo"); // lo / may / ecb
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
-    const handler = e => setDarkMode(e.matches)
-    mediaQuery.addEventListener("change", handler)
-    return () => mediaQuery.removeEventListener("change", handler)
-  }, [])
+  const [devices, setDevices] = useState([]);
+  const [cis, setCIs] = useState({ lo: [], may: [], ecb: [] });
+  const [results, setResults] = useState([]);
+  const [highlight, setHighlight] = useState([]);
+  const [offline, setOffline] = useState(!navigator.onLine);
+  const [loading, setLoading] = useState(true);
+
+  const normalize = (d) => ({
+    kks: String(d.kks || d.KKS || "").toUpperCase().trim(),
+    cap: String(d.cap || d.CAP || "").toUpperCase().trim(),
+    macb: String(d.macb || d.CB || "").toUpperCase().trim(),
+    ten: String(d.ten || d.NAME || "").toUpperCase().trim(),
+    vitri: String(d.vitri || d["VỊ TRÍ"] || "").toUpperCase().trim(),
+    tu: String(d.tu || d["TỦ"] || "").toUpperCase().trim(),
+    thanhcai: String(d.thanhcai || d["THANH CÁI"] || "").toUpperCase().trim(),
+  });
 
   useEffect(() => {
     fetch("/devices.json")
-      .then(res => res.json())
-      .then(data => {
-        const normalized = data.map(d => ({
-          kks: String(d.kks || "").trim().toUpperCase(),
-          cap: String(d.cap || "").trim().toUpperCase(),
-          tu: String(d.tu || ""),
-          ten: String(d.ten || "")
-        }))
-        setDevices(normalized)
-        setLoading(false)
-      })
-      .catch(err => {
-        console.error("Không load được devices.json:", err)
-        setLoading(false)
-      })
+      .then((r) => r.json())
+      .then((d) => setDevices(d.map(normalize)))
+      .catch(console.error);
 
-    function onOnline() { setOffline(false) }
-    function onOffline() { setOffline(true) }
-    window.addEventListener("online", onOnline)
-    window.addEventListener("offline", onOffline)
+    fetch("/C&I.json")
+      .then((r) => r.json())
+      .then((d) => {
+        setCIs({
+          lo: (d["lò"] || []).map(normalize),
+          may: (d["máy"] || []).map(normalize),
+          ecb: (d["ecb"] || []).map(normalize),
+        });
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+
+    function onOnline() { setOffline(false); }
+    function onOffline() { setOffline(true); }
+    window.addEventListener("online", onOnline);
+    window.addEventListener("offline", onOffline);
     return () => {
-      window.removeEventListener("online", onOnline)
-      window.removeEventListener("offline", onOffline)
+      window.removeEventListener("online", onOnline);
+      window.removeEventListener("offline", onOffline);
+    };
+  }, []);
+
+  const handleSearch = (q, type) => {
+    if (!q) {
+      setResults([]);
+      setHighlight([]);
+      return;
     }
-  }, [])
+    const maArr = q.split(",").map((m) => m.trim().toUpperCase()).filter(Boolean);
+    setHighlight(maArr);
 
-  // -----------------------------
-  // Tra cứu và loại bỏ duplicate
-  // -----------------------------
-  function handleSearch(q) {
-    if (!q) { setResults([]); setHighlight([]); return }
-    if (loading) { alert("Dữ liệu đang load, vui lòng chờ..."); return }
+    let source = [];
+    if (type === "device") source = devices;
+    else if (type === "ci") source = cis[ciSheet] || [];
 
-    const maArr = q.split(",").map(m => String(m).trim().toUpperCase()).filter(Boolean)
-    setHighlight(maArr)
+    const filtered = source.filter(d => maArr.includes(d.kks) || maArr.includes(d.cap));
 
-    const filtered = devices.filter(d => maArr.includes(d.kks) || maArr.includes(d.cap))
-
-    // Loại bỏ trùng lặp: key = kks + cap + tu
-    const uniqueMap = {}
+    const merged = {};
     filtered.forEach(d => {
-      const key = `${d.kks}_${d.cap}_${d.tu}`
-      if (!uniqueMap[key]) uniqueMap[key] = d
-    })
+      const key = d.kks + "|" + d.cap; // avoid duplicates
+      if (!merged[key]) merged[key] = { ...d };
+    });
 
-    setResults(Object.values(uniqueMap))
-  }
+    setResults(Object.values(merged));
+  };
 
-  // -----------------------------
-  // Colors chuẩn iOS
-  // -----------------------------
-  const bgColor = darkMode ? "#1c1c1e" : "#f7f7f7"
-  const cardBgColor = darkMode ? "#2a2a2a" : "white"
-  const borderColor = darkMode ? "#3a3a3c" : "#e0e0e0"
-  const textColor = darkMode ? "#f5f5f7" : "#222"
-  const mutedColor = darkMode ? "#8e8e93" : "#666"
+  const variants = { hidden: { x: 300, opacity: 0 }, visible: { x: 0, opacity: 1 }, exit: { x: -300, opacity: 0 } };
 
   return (
-    <div style={{
-      minHeight: "100vh",
-      backgroundColor: bgColor,
-      padding: "20px",
-      fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
-      color: textColor
-    }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        fontFamily: "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif",
+        color: "#fff",
+        backgroundColor: "#1c1c1e",
+        padding: "12px"
+      }}
+    >
       {/* Header */}
-      <div className="header" style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-        <div className="logo" style={{
-          width: "48px", height: "48px", borderRadius: "12px",
-          backgroundColor: "#007bff", color: "white",
-          display: "flex", alignItems: "center", justifyContent: "center",
-          fontWeight: "bold", fontSize: "20px"
-        }}>
-          ⚡
-        </div>
+      <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
+        <img
+          src="/logo-spark.svg"
+          alt="IsoFind Logo"
+          style={{ width: "40px", height: "40px", objectFit: "contain" }}
+        />
         <div>
-          <h1 style={{ margin: 0, fontSize: "24px", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" }}>IsoFind</h1>
-          <div style={{
-            color: mutedColor,
-            fontSize: "14px",
-            fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif",
-            fontWeight: 400,
-            letterSpacing: "0.5px"
-          }}>
-            Find & Isolate Fast
-          </div>
+          <h1 style={{ margin: 0, fontSize: "18px" }}>IsoFind</h1>
+          <div style={{ color: "#8e8e93", fontSize: "12px" }}>Find & Isolate Fast</div>
         </div>
       </div>
 
-      <SearchForm onSearch={handleSearch} darkMode={darkMode} mutedColor={mutedColor} />
+      {offline && <div style={{ color: "#ff3b30", marginBottom: "12px" }}>⚠️ Offline — dữ liệu cục bộ vẫn dùng được</div>}
 
-      {offline && <div style={{
-        padding:"10px 14px",
-        marginBottom:12,
-        backgroundColor: darkMode ? "#5a3e00" : "#fff3cd",
-        borderRadius:"10px",
-        color: darkMode ? "#fff" : "#856404"
-      }}>⚠️ Đang ở chế độ Offline — dữ liệu cục bộ vẫn dùng được</div>}
+      {/* Nội dung chính */}
+      <div style={{ flex: 1 }}>
+        <AnimatePresence mode="wait">
+          {layer === "mode" && (
+            <motion.div key="mode" initial="hidden" animate="visible" exit="exit" variants={variants} transition={{ duration: 0.3 }}>
+              <h2>Chọn chế độ</h2>
+              <div style={{ display: "flex", gap: "12px", marginTop: "12px" }}>
+                <button
+                  style={{ ...iosButtonStyle({ active: true }), background: "linear-gradient(135deg,#0a84ff,#5ac8fa)" }}
+                  onClick={(e) => { createRipple(e); setLayer("searchDevice"); }}
+                  onMouseDown={iosButtonEffect}
+                  onMouseUp={iosButtonReset}
+                  onMouseLeave={iosButtonReset}
+                >
+                  Cô lập thiết bị
+                </button>
+                <button
+                  style={iosButtonStyle({ active: false })}
+                  onClick={(e) => { createRipple(e); setLayer("ciSelect"); }}
+                  onMouseDown={iosButtonEffect}
+                  onMouseUp={iosButtonReset}
+                  onMouseLeave={iosButtonReset}
+                >
+                  Cô lập nguồn C&I
+                </button>
+              </div>
+            </motion.div>
+          )}
 
-      <div style={{ marginTop: 12 }}>
-        {loading && <div style={{ fontSize: "16px" }}>Đang load dữ liệu...</div>}
+          {layer === "ciSelect" && (
+            <motion.div key="ciSelect" initial="hidden" animate="visible" exit="exit" variants={variants} transition={{ duration: 0.3 }}>
+              <h2>Chọn nguồn C&I</h2>
+              <div style={{ display: "flex", gap: "12px", marginBottom: "12px" }}>
+                {["lo", "may", "ecb"].map(s => (
+                  <button
+                    key={s}
+                    style={{ ...iosButtonStyle({ active: ciSheet === s }), background: ciSheet === s ? "linear-gradient(135deg,#0a84ff,#5ac8fa)" : "#3a3a3c" }}
+                    onClick={(e) => { createRipple(e); setCiSheet(s); setLayer("searchCI"); }}
+                    onMouseDown={iosButtonEffect}
+                    onMouseUp={iosButtonReset}
+                    onMouseLeave={iosButtonReset}
+                  >
+                    {s.toUpperCase()}
+                  </button>
+                ))}
+              </div>
+              <button
+                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30" }}
+                onClick={(e) => { createRipple(e); setLayer("mode"); }}
+                onMouseDown={iosButtonEffect}
+                onMouseUp={iosButtonReset}
+                onMouseLeave={iosButtonReset}
+              >
+                Quay lại
+              </button>
+            </motion.div>
+          )}
 
-        {!loading && results.length === 0 && (
-          <div style={{
-            color: mutedColor,
-            marginTop: 8,
-            padding: "14px",
-            borderRadius: "12px",
-            backgroundColor: cardBgColor,
-            boxShadow: darkMode ? "0 2px 6px rgba(0,0,0,0.4)" : "0 2px 6px rgba(0,0,0,0.08)",
-            fontSize: "16px"
-          }}>
-            Chưa có kết quả. Thử nhập mã KKS hoặc mã cáp.
-          </div>
-        )}
+          {layer === "searchDevice" && (
+            <motion.div key="searchDevice" initial="hidden" animate="visible" exit="exit" variants={variants} transition={{ duration: 0.3 }}>
+              <SearchForm onSearch={(q) => handleSearch(q, "device")} />
+              <div style={{ marginTop: "12px" }}>
+                {results.length === 0 && <div style={{ color: "#8e8e93" }}>Nhập mã KKS hoặc mã cáp</div>}
+                {results.map((dev) => <ResultCard key={dev.kks + dev.cap} device={dev} highlight={highlight} />)}
+              </div>
+              <button
+                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30", marginTop: "12px" }}
+                onClick={(e) => { createRipple(e); setLayer("mode"); }}
+                onMouseDown={iosButtonEffect}
+                onMouseUp={iosButtonReset}
+                onMouseLeave={iosButtonReset}
+              >
+                Quay lại
+              </button>
+            </motion.div>
+          )}
 
-        {results.map((dev, idx) => (
-          <ResultCard key={idx} device={dev} highlight={highlight} darkMode={darkMode} />
-        ))}
+          {layer === "searchCI" && (
+            <motion.div key="searchCI" initial="hidden" animate="visible" exit="exit" variants={variants} transition={{ duration: 0.3 }}>
+              <SearchForm onSearch={(q) => handleSearch(q, "ci")} />
+              <div style={{ marginTop: "12px" }}>
+                {loading && <div>Loading...</div>}
+                {results.length === 0 && !loading && <div style={{ color: "#8e8e93" }}>Nhập KKS hoặc CAP</div>}
+                {results.map((dev) => <ResultCard key={dev.kks + dev.cap} device={dev} highlight={highlight} />)}
+              </div>
+              <button
+                style={{ ...iosButtonStyle({ active: false, color: "#ff3b30" }), background: "#ff3b30", marginTop: "12px" }}
+                onClick={(e) => { createRipple(e); setLayer("ciSelect"); }}
+                onMouseDown={iosButtonEffect}
+                onMouseUp={iosButtonReset}
+                onMouseLeave={iosButtonReset}
+              >
+                Quay lại
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
-      <footer style={{ color: mutedColor, marginTop: 20, textAlign: "center", fontSize: "14px" }}>
-        © IsoFind — By Vận hành 2 - Công ty Nhiệt điện Duyên Hải
+      {/* Footer cố định */}
+      <footer style={{ textAlign: "center", color: "#8e8e93", padding: "12px 0", fontSize: "12px" }}>
+        © IsoFind - Vận hành 2 - TPC Duyên Hải
       </footer>
     </div>
-  )
+  );
 }

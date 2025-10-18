@@ -1,41 +1,46 @@
-﻿import React, { useState } from "react"
+﻿import React, { useState } from "react";
 
-export default function SearchForm({ onSearch, darkMode, mutedColor }) {
-  const [query, setQuery] = useState("")
+export default function SearchForm({ onSearch }) {
+  const [query, setQuery] = useState("");
 
-  function handleSubmit(e) {
-    e.preventDefault()
-    onSearch(query)
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSearch(query);
+  };
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: "flex", gap: "12px", marginBottom: "12px" }}>
+    <form onSubmit={handleSubmit} style={{ display: "flex", gap: "8px", marginBottom: "12px" }}>
       <input
         type="text"
+        placeholder="Nhập KKS hoặc CAP..."
         value={query}
-        onChange={e => setQuery(e.target.value)}
-        placeholder="Nhập mã KKS hoặc mã cáp, ngăn cách bằng dấu ,"
+        onChange={(e) => setQuery(e.target.value)}
         style={{
           flex: 1,
-          padding: "12px 14px",
+          padding: "10px 12px",
           borderRadius: "12px",
-          border: `1px solid ${darkMode ? "#3a3a3c" : "#ccc"}`,
-          backgroundColor: darkMode ? "#2a2a2a" : "white",
-          color: darkMode ? "white" : "black",
-          fontSize: "16px",
-          fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif"
+          border: "1px solid #3a3a3c",
+          backgroundColor: "#2c2c2e",
+          color: "#fff",
+          fontSize: "14px",
         }}
       />
-      <button type="submit" style={{
-        padding: "12px 18px",
-        borderRadius: "12px",
-        border: "none",
-        backgroundColor: "#007bff",
-        color: "white",
-        fontWeight: 600,
-        cursor: "pointer",
-        fontSize: "16px"
-      }}>Search</button>
+      <button
+        type="submit"
+        style={{
+          ...{
+            padding: "10px 18px",
+            borderRadius: "12px",
+            border: "none",
+            backgroundColor: "#0a84ff",
+            color: "#fff",
+            fontWeight: "500",
+            cursor: "pointer",
+          }
+        }}
+      >
+        Search
+      </button>
     </form>
-  )
+  );
 }

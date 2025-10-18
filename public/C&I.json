@@ -1,0 +1,3365 @@
+{
+  "lò": [
+    {
+      "kks": "3HLA53AA201",
+      "ten": "AIR HEATER OUTLET PRIMARY AIR DAMPER",
+      "macb": "Q1",
+      "cap": "33BKA1149",
+      "vitri": "COS 22.5M",
+      "tu": "33BKA00GH071",
+      "thanhcai": "33BJK05\nGS710"
+    },
+    {
+      "kks": "33HA24A4201",
+      "ten": "AIR HEATER OUTLET PRIMARY AIR DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1418",
+      "vitri": "COS 22.5M",
+      "tu": "33BKA00GH071",
+      "thanhcai": "33BJK05\nGS710"
+    },
+    {
+      "kks": "33HLA70AA201",
+      "ten": "COLD PRIMARY AIR CROSSOVER DAMPER",
+      "macb": "Q3",
+      "cap": "33BKA1144",
+      "vitri": "COS 22.5M",
+      "tu": "33BKA00GH071",
+      "thanhcai": "33BJK05\nGS710"
+    },
+    {
+      "kks": "33H LA63AA201",
+      "ten": "AI R H EATER OUTLET PRIMARY AI R DAMPER",
+      "macb": "Q1",
+      "cap": "33BKA1165",
+      "vitri": "COS 22.5M",
+      "tu": "33BKA00GH072",
+      "thanhcai": "33BJR04\nGS630"
+    },
+    {
+      "kks": "33H LA34AA201",
+      "ten": "SECONDARY AIR AIRHEATER OUT DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1142",
+      "vitri": "COS 22.5M",
+      "tu": "33BKA00GH072",
+      "thanhcai": "33BJR04\nGS630"
+    },
+    {
+      "kks": "33H LA41AA201",
+      "ten": "SECONDARY AI R BYPASS DAMPER",
+      "macb": "Q3",
+      "cap": "33BKA1143",
+      "vitri": "COS 22.5M",
+      "tu": "33BKA00GH072",
+      "thanhcai": "33BJR04\nGS630"
+    },
+    {
+      "kks": "33H LA70AA202",
+      "ten": "COLD PRIMARY AI R CROSSOVER DAMPER",
+      "macb": "Q4",
+      "cap": "33BKA1166",
+      "vitri": "COS 22.5M",
+      "tu": "33BKA00GH072",
+      "thanhcai": "33BJR04\nGS630"
+    },
+    {
+      "kks": "33HNA01AA201",
+      "ten": "ELECTROSTATIC PRECIPITATOR A INLET \nDAMPER",
+      "macb": "Q1",
+      "cap": "33BKA1444",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH073",
+      "thanhcai": "33BJK05\nGS800"
+    },
+    {
+      "kks": "33HNA01AA202",
+      "ten": "ELECTROSTATIC PRECIPITATOR A INLET\n DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1445",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH073",
+      "thanhcai": "33BJK05\nGS800"
+    },
+    {
+      "kks": "33HLA21AA201",
+      "ten": "FORCED DRAFT FAN A 1 NLET DAMPER",
+      "macb": "Q3",
+      "cap": "33BKA1446",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH073",
+      "thanhcai": "33BJK05\nGS800"
+    },
+    {
+      "kks": "33HLA22AA201",
+      "ten": "FORCED DRAFT FAN A OUTLET DAMPER",
+      "macb": "Q4",
+      "cap": "33BKA1447",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH073",
+      "thanhcai": "33BJK05\nGS800"
+    },
+    {
+      "kks": "33HLA52AA201",
+      "ten": "PRIMARY AI R FAN A OUTLET DAMPER",
+      "macb": "Q5",
+      "cap": "33BKA1145",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH073",
+      "thanhcai": "33BJK05\nGS800"
+    },
+    {
+      "kks": "33HLB21AS001",
+      "ten": "FORCED DRAFT FAN A ACTUATOR",
+      "macb": "Q6",
+      "cap": "33BKA1447",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH073",
+      "thanhcai": "33BJK05\nGS800"
+    },
+    {
+      "kks": "33HLB51AS001",
+      "ten": "PRIMARY AI R FAN A ACTUATOR",
+      "macb": "Q7",
+      "cap": "33BKA1448",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH073",
+      "thanhcai": "33BJK05\nGS800"
+    },
+    {
+      "kks": "33ERB31AA201",
+      "ten": "HEAVY FUEL 01 L HEATER A INLET\n ISOLATION MOTOR- OPEARTED BLOCKVALVE",
+      "macb": "Q8",
+      "cap": "33BKA1449",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH073",
+      "thanhcai": "33BJK05\nGS800"
+    },
+    {
+      "kks": "33ERB50AA201",
+      "ten": "HEAVY FUEL 01 L COOLER A ISOLATION\n MOTOR- OPEARTED BLOCK VALVE",
+      "macb": "Q9",
+      "cap": "33BKA1450",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH073",
+      "thanhcai": "33BJK05\nGS800"
+    },
+    {
+      "kks": "33H NA02AA202",
+      "ten": "ELECTROSTATIC PRECIPITATOR B INLET DAMPER",
+      "macb": "Q1",
+      "cap": "33BKA1453",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH074",
+      "thanhcai": "33BJR05\nGS800"
+    },
+    {
+      "kks": "33H NA02AA201",
+      "ten": "ELECTROSTATIC PRECIPITATOR B INLET DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1454",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH074",
+      "thanhcai": "33BJR05\nGS800"
+    },
+    {
+      "kks": "33H LA31AA201",
+      "ten": "FORCED DRAFT FAN B INLET DAMPER",
+      "macb": "Q3",
+      "cap": "33BKA1455",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH074",
+      "thanhcai": "33BJR05\nGS800"
+    },
+    {
+      "kks": "33H LA32AA201",
+      "ten": "FORCED DRAFT FAN B OUTLET DAMPER",
+      "macb": "Q4",
+      "cap": "33BKA1456",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH074",
+      "thanhcai": "33BJR05\nGS800"
+    },
+    {
+      "kks": "33H LA62AA201",
+      "ten": "PRIMARY AI R FAN B OUTLET DAMPER",
+      "macb": "Q5",
+      "cap": "33BKA1161",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH074",
+      "thanhcai": "33BJR05\nGS800"
+    },
+    {
+      "kks": "33HLB31AS001",
+      "ten": "FORCED DRAFT FAN B ACTUATOR",
+      "macb": "Q6",
+      "cap": "33BKA1457",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH074",
+      "thanhcai": "33BJR05\nGS800"
+    },
+    {
+      "kks": "33H LB61AS001",
+      "ten": "PRIMARY AI R FAN B ACTUATOR",
+      "macb": "Q7",
+      "cap": "33BKA1458",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH074",
+      "thanhcai": "33BJR05\nGS800"
+    },
+    {
+      "kks": "33ERB32AA201",
+      "ten": "HEAVY FUEL 01 L HEATER B INLET ISOLATION\n MOTOR- OPEARTED BLOCK VALVE",
+      "macb": "Q8",
+      "cap": "33BKA1459",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH074",
+      "thanhcai": "33BJR05\nGS800"
+    },
+    {
+      "kks": "33ERB50AA202",
+      "ten": "HEAVY FUEL 01 L COOLER B ISOLATION\n MOTOR- OPEARTED BLOCK VALVE",
+      "macb": "Q9",
+      "cap": "33BKA1460",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH074",
+      "thanhcai": "33BJR05\nGS800"
+    },
+    {
+      "kks": "33HNA01AA203",
+      "ten": "INDUCED DRAFT FAN A INLET DAMPER",
+      "macb": "Q1",
+      "cap": "33BKA1461",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH075",
+      "thanhcai": "33BJK04\nGS310"
+    },
+    {
+      "kks": "33HNA03AA201",
+      "ten": "INDUCED DRAFT FAN INLET 1NTCONNECTION DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1462",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH075",
+      "thanhcai": "33BJK04\nGS310"
+    },
+    {
+      "kks": "33HTA11AA201",
+      "ten": "INDUCED DRAFT FAN A OUTLET DAMPER",
+      "macb": "Q3",
+      "cap": "33BKA1463",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH075",
+      "thanhcai": "33BJK04\nGS310"
+    },
+    {
+      "kks": "33HNC01AS001",
+      "ten": "INDUCED DRAFT FAN A ACTUATOR",
+      "macb": "Q4",
+      "cap": "33BKA1464",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH075",
+      "thanhcai": "33BJK04\nGS310"
+    },
+    {
+      "kks": "33HNA02AA203",
+      "ten": "INDUCED DRAFT FAN B INLET DAMPER",
+      "macb": "Q1",
+      "cap": "33BKA1465",
+      "vitri": "CHLORINATION PLANT\n MCC ROOM, COS 0M",
+      "tu": "33BKA00GH076",
+      "thanhcai": "33BJR04-\n GS310"
+    },
+    {
+      "kks": "33HTA12AA201",
+      "ten": "INDUCED DRAFT FAN B OUTLET DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1466",
+      "vitri": "CHLORINATION PLANT\n MCC ROOM, COS 0M",
+      "tu": "33BKA00GH076",
+      "thanhcai": "33BJR04-\n GS310"
+    },
+    {
+      "kks": "33HNC02AS001",
+      "ten": "INDUCED DRAFT FAN B ACTUATOR",
+      "macb": "Q3",
+      "cap": "33BKA1467",
+      "vitri": "CHLORINATION PLANT\n MCC ROOM, COS 0M",
+      "tu": "33BKA00GH076",
+      "thanhcai": "33BJR04-\n GS310"
+    },
+    {
+      "kks": "33UQA01GH001",
+      "ten": "ROLLUP DOOR",
+      "macb": "Q1",
+      "cap": "33BKA1487",
+      "vitri": "IDF FLOOR, COS 0M",
+      "tu": "33BKA00GH077",
+      "thanhcai": "33BLK05\nGS610"
+    },
+    {
+      "kks": "33UQA01GH002",
+      "ten": "ROLLUP DOOR",
+      "macb": "Q2",
+      "cap": "33BKA1488",
+      "vitri": "IDF FLOOR, COS 0M",
+      "tu": "33BKA00GH077",
+      "thanhcai": "33BLK05\nGS610"
+    },
+    {
+      "kks": "33UQA01GH003",
+      "ten": "ROLLUP DOOR",
+      "macb": "Q3",
+      "cap": "33BKA1489",
+      "vitri": "IDF FLOOR, COS 0M",
+      "tu": "33BKA00GH077",
+      "thanhcai": "33BLK05\nGS610"
+    },
+    {
+      "kks": "33UQA01GH004",
+      "ten": "ROLLUP DOOR",
+      "macb": "Q4",
+      "cap": "33BKA1490",
+      "vitri": "IDF FLOOR, COS 0M",
+      "tu": "33BKA00GH077",
+      "thanhcai": "33BLK05\nGS610"
+    },
+    {
+      "kks": "33SAD30GH001",
+      "ten": "COAL WASTE WATER TREATMENT BUI LDING HVAC \nLOCAL CONTROL PANEL 1",
+      "macb": "Q1",
+      "cap": "33BKA1647",
+      "vitri": "KHU VỰC XỬ LÝ NƯỚC THẢI\n NHIỄM THAN, COS 0M",
+      "tu": "33BKA00GH078",
+      "thanhcai": "33BLE05GS300"
+    },
+    {
+      "kks": "33SAD30GH002",
+      "ten": "COAL WASTE WATER TREATMENT BUI LDI NG \nHVAC LOCAL CONTROL PANEL 2",
+      "macb": "Q2",
+      "cap": "33BKA1648",
+      "vitri": "KHU VỰC XỬ LÝ NƯỚC THẢI\n NHIỄM THAN, COS 0M",
+      "tu": "33BKA00GH078",
+      "thanhcai": "33BLE05GS300"
+    },
+    {
+      "kks": "33SAD30GH003",
+      "ten": "COAL WASTE WATER TREATMENT BUI LDI NG\n HVAC LOCAL CONTROL PANEL 3",
+      "macb": "Q3",
+      "cap": "33BKA1649",
+      "vitri": "KHU VỰC XỬ LÝ NƯỚC THẢI\n NHIỄM THAN, COS 0M",
+      "tu": "33BKA00GH078",
+      "thanhcai": "33BLE05GS300"
+    },
+    {
+      "kks": "33SAD30GH004",
+      "ten": "COAL WASTE WATER TREATMENT BUI LDI NG\n HVAC LOCAL CONTROLPANEL4",
+      "macb": "Q4",
+      "cap": "33BKA1650",
+      "vitri": "KHU VỰC XỬ LÝ NƯỚC THẢI\n NHIỄM THAN, COS 0M",
+      "tu": "33BKA00GH078",
+      "thanhcai": "33BLE05GS300"
+    },
+    {
+      "kks": "33UGV01GH001",
+      "ten": "ROLLUP DOOR",
+      "macb": "Q5",
+      "cap": "33BKA1651",
+      "vitri": "KHU VỰC XỬ LÝ NƯỚC THẢI\n NHIỄM THAN, COS 0M",
+      "tu": "33BKA00GH078",
+      "thanhcai": "33BLE05GS300"
+    },
+    {
+      "kks": "33LAB81AA201",
+      "ten": "BOILER FEED PUMP TO WATER COLLECTING TANK\n SUBCOOLING MOTOR-OPERATED VALVE",
+      "macb": "Q1",
+      "cap": "33BKA1001",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH001",
+      "thanhcai": "33BJD06GS310"
+    },
+    {
+      "kks": "33HAN00AA203",
+      "ten": "HORIZONTAL CONVECTION PASS FRONT/REAR/SIDE \nWALL DRAI N BLOCK MOTOR-OPERATED VALVE",
+      "macb": "Q2",
+      "cap": "33BKA1022",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH001",
+      "thanhcai": "33BJD06GS310"
+    },
+    {
+      "kks": "33LBH00AA213",
+      "ten": "WATER COLLECTING TANK HIGH LEVEL (341-B1) \nBYPASS MOTOR-OPERATED VALVE",
+      "macb": "Q3",
+      "cap": "33BKA1002",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH001",
+      "thanhcai": "33BJD06GS310"
+    },
+    {
+      "kks": "33LBH00AA211",
+      "ten": "WATER COLLECTING TANK HIGH LEVEL (341-B1)\n MOTOR-OPERATED VALVE",
+      "macb": "Q4",
+      "cap": "33BKA1003",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH001",
+      "thanhcai": "33BJD06GS310"
+    },
+    {
+      "kks": "33LBH00AA214",
+      "ten": "WATER COLLECTING TANK HIGH LEVEL \n(341-B2) BYPASS MOTOR-OPERATED VALVE",
+      "macb": "Q5",
+      "cap": "33BKA1004",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH001",
+      "thanhcai": "33BJD06GS310"
+    },
+    {
+      "kks": "33LBH00AA212",
+      "ten": "WATER COLLECTING TANK HIGH LEVEL (341-B2) \nMOTOR-OPERATED VALVE",
+      "macb": "Q6",
+      "cap": "33BKA1005",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH001",
+      "thanhcai": "33BJD06GS310"
+    },
+    {
+      "kks": "33HAN00AA272",
+      "ten": "ECONOMIZER DRAIN MOTOR-OPERATED VALVE",
+      "macb": "Q1",
+      "cap": "33BKA1021",
+      "vitri": "COS 63.2M",
+      "tu": "33BKA00GH002",
+      "thanhcai": "33BJD06GS330"
+    },
+    {
+      "kks": "33HAN00AA201",
+      "ten": "HORIZONTAL CONVECTION PASS LOWER BAFFLE \nWALL HEADER DRAIN MOTOR-OPERATED VALVE",
+      "macb": "Q3",
+      "cap": "33BKA1023",
+      "vitri": "COS 63.2M",
+      "tu": "33BKA00GH002",
+      "thanhcai": "33BJD06GS330"
+    },
+    {
+      "kks": "33HAN00AA202",
+      "ten": "PENDANT CONVECTION PASS REAR WALL (LEFT SIDE & RIGHTSIDE) \nDRAIN MOTOR-OPERATED VALVE",
+      "macb": "Q4",
+      "cap": "33BKA1024",
+      "vitri": "COS 63.2M",
+      "tu": "33BKA00GH002",
+      "thanhcai": "33BJD06GS330"
+    },
+    {
+      "kks": "33HAN00AA280",
+      "ten": "PLATEN SUPERHEATER INLET HEADER DRAIN \nMOTOR- OPERATED VALVE",
+      "macb": "Q5",
+      "cap": "33BKA1025",
+      "vitri": "COS 63.2M",
+      "tu": "33BKA00GH002",
+      "thanhcai": "33BJD06GS330"
+    },
+    {
+      "kks": "33HAN00AA286",
+      "ten": "SECONDARY SUPERHEATER INLET HEADER \nDRAIN MOTOR-OPERATED VALVE",
+      "macb": "Q6",
+      "cap": "33BKA1026",
+      "vitri": "COS 63.2M",
+      "tu": "33BKA00GH002",
+      "thanhcai": "33BJD06GS330"
+    },
+    {
+      "kks": "33HAN00AA288",
+      "ten": "SECONDARY SUPERHEATER OUTLET HEADER \nDRAI N MOTOR-OPERATED VALVE",
+      "macb": "Q7",
+      "cap": "33BKA1027",
+      "vitri": "COS 63.2M",
+      "tu": "33BKA00GH002",
+      "thanhcai": "33BJD06GS330"
+    },
+    {
+      "kks": "33HAN00AA292",
+      "ten": "FINAL REHEAT INLET HEADER DRAIN \nMOTOR- OPERATED VALVE",
+      "macb": "Q8",
+      "cap": "33BKA1028",
+      "vitri": "COS 63.2M",
+      "tu": "33BKA00GH002",
+      "thanhcai": "33BJD06GS330"
+    },
+    {
+      "kks": "33HAN00AA294",
+      "ten": "FINAL REHEAT OUTLET HEADER DRAIN \nMOTOR- OPERATED VALVE",
+      "macb": "Q9",
+      "cap": "33BKA1029",
+      "vitri": "COS 63.2M",
+      "tu": "33BKA00GH002",
+      "thanhcai": "33BJD06GS330"
+    },
+    {
+      "kks": "33HAN00AA205",
+      "ten": "VERTICAL STEAM SEPARATOR MIX HEADER \nTO ROOF MOTOR-OPERATED VALVE",
+      "macb": "Q1",
+      "cap": "33BKA1041",
+      "vitri": "COS 17.2M",
+      "tu": "33BKA00GH003",
+      "thanhcai": "33BJE05GS310"
+    },
+    {
+      "kks": "33HAN00AA212",
+      "ten": "HORIZONTAL CONVECTION PASS BAFFLE WALL\n VENT TO ATMOSPHERE MOTOR-OPERATED VALVE",
+      "macb": "Q2",
+      "cap": "33BKA1042",
+      "vitri": "COS 17.2M",
+      "tu": "33BKA00GH003",
+      "thanhcai": "33BJE05GS310"
+    },
+    {
+      "kks": "33HAN00AA217",
+      "ten": "PRIMARY SUPERHEATER OUTLET HEADER VENT \nTO ATMOSPHERE MOTOR-OPERATED VALVE",
+      "macb": "Q3",
+      "cap": "33BKA1043",
+      "vitri": "COS 17.2M",
+      "tu": "33BKA00GH003",
+      "thanhcai": "33BJE05GS310"
+    },
+    {
+      "kks": "33HAN00AA220",
+      "ten": "SECONDARY SUPERHEATER INLET HEADER VENT \nTO ATMOSPHERE MOTOR-OPERATED VALVE",
+      "macb": "Q4",
+      "cap": "33BKA1044",
+      "vitri": "COS 17.2M",
+      "tu": "33BKA00GH003",
+      "thanhcai": "33BJE05GS310"
+    },
+    {
+      "kks": "33HAN00AA223",
+      "ten": "SECONDARY SUPERHEATER OUTLET HEADER\n VENT TO ATMOSPHERE MOTOR-OPERATED VALVE",
+      "macb": "Q5",
+      "cap": "33BKA1045",
+      "vitri": "COS 17.2M",
+      "tu": "33BKA00GH003",
+      "thanhcai": "33BJE05GS310"
+    },
+    {
+      "kks": "33HAN00AA232",
+      "ten": "REHEATER OUTLET VENT TO ATMOSPHERE\n MOTOR- OPERATED VALVE",
+      "macb": "Q6",
+      "cap": "33BKA1046",
+      "vitri": "COS 17.2M",
+      "tu": "33BKA00GH003",
+      "thanhcai": "33BJE05GS310"
+    },
+    {
+      "kks": "33HAN00AA204",
+      "ten": "VERTICAL STEAM SEPARATOR MANIFOLD\n VENTTO ATMOSPHERE MOTOR-OPERATED VALVE",
+      "macb": "Q7",
+      "cap": "33BKA1002",
+      "vitri": "COS 17.2M",
+      "tu": "33BKA00GH003",
+      "thanhcai": "33BJE05GS310"
+    },
+    {
+      "kks": "33LAB90AA201",
+      "ten": "STARTUP FI RST STAGE SPRAY WATER VALVE",
+      "macb": "Q8",
+      "cap": "33BKA1048",
+      "vitri": "COS 17.2M",
+      "tu": "33BKA00GH003",
+      "thanhcai": "33BJE05GS310"
+    },
+    {
+      "kks": "33LAB91AA201",
+      "ten": "STARTUP SECONDARY STAGE SPRAY WATER VALVE",
+      "macb": "Q9",
+      "cap": "33BKA1049",
+      "vitri": "COS 17.2M",
+      "tu": "33BKA00GH003",
+      "thanhcai": "33BJE05GS310"
+    },
+    {
+      "kks": "33LBH00AA202",
+      "ten": "BOILER CIRCULATION PUMP DISCHARGE TO ECONOMIZER\nSTARTUP/CHECK BYPASS MOTOR- OPERATED VALVE",
+      "macb": "Q1",
+      "cap": "33BKA1061",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33LBH00AA201",
+      "ten": "BOILER CIRCULATION PUMP DISCHARGE TO ECONOMIZER \nSTARTUP/CHECK MOTOR-OPERATED VALVE",
+      "macb": "Q2",
+      "cap": "33BKA1062",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33LAB00AA203",
+      "ten": "FEEDWATER TO ECONOMIZER INLET\n BYPASS MOTOR- OPERATED VALVE",
+      "macb": "Q3",
+      "cap": "33BKA1063",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33LAB80AA201",
+      "ten": "START UP ISOLATION VALVE",
+      "macb": "Q4",
+      "cap": "33BKA1064",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33LAB80AA202",
+      "ten": "FEEDWATER START UP ISOLATION VALVE",
+      "macb": "Q5",
+      "cap": "33BKA1065",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33HHD81AA101",
+      "ten": "NOX PORT PR1 AIR DISC ACTUATOR",
+      "macb": "Q6",
+      "cap": "33BKA1481",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33HHD81AA102",
+      "ten": "NOX PORT PR2 AIR DISC ACTUATOR",
+      "macb": "Q7",
+      "cap": "33BKA1482",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33HHD81AA103",
+      "ten": "NOX PORT PR3 AIR DISC ACTUATOR",
+      "macb": "Q8",
+      "cap": "33BKA1483",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33LAB80AA201-A",
+      "ten": "START UP ISOLATION VALVE BYPASS \nMOTOR- OPERATED VALVE",
+      "macb": "Q9",
+      "cap": "33BKA1623",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33LAB80AA202-A",
+      "ten": "FEEDWATER START UP ISOLATION VALVE \nBYPASS MOTOR-OPERATED VALVE",
+      "macb": "Q10",
+      "cap": "33BKA1624",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH004",
+      "thanhcai": "33BJE04GS200"
+    },
+    {
+      "kks": "33LBG01AA202",
+      "ten": "Al R HEATER A COLD END SOOTBLOWER \nMOTOR- OPERATED VALVE",
+      "macb": "Q1",
+      "cap": "33BKA1081",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33LBG01AA201",
+      "ten": "Al R HEATER A HOT END SOOTBLOWER \nMOTOR- OPERATED VALVE",
+      "macb": "Q2",
+      "cap": "33BKA1082",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33LBG00AA201",
+      "ten": "SELECTIVE CATALYTIC REDUCTION REACTOR SOOT\n BLOWER STEAM MOTOR-OPERATED VALVE",
+      "macb": "Q3",
+      "cap": "33BKA1083",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33HLD01GH101",
+      "ten": "Al R HEATER A INSTRUMENT CONTROL PANEL",
+      "macb": "Q4",
+      "cap": "33BKA1084",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33H LD01AC121",
+      "ten": "Al R HEATER A LEAKAGE CONTROL SYSTEM MOTOR 1",
+      "macb": "Q5",
+      "cap": "33BKA1085",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33HLD01AC122",
+      "ten": "Al R HEATER A LEAKAGE CONTROL SYSTEM MOTOR 2",
+      "macb": "Q6",
+      "cap": "33BKA1086",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33H LD01AC123",
+      "ten": "Al R HEATER A LEAKAGE CONTROL SYSTEM MOTOR 3",
+      "macb": "Q7",
+      "cap": "33BKA1087",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33H NA01AA211",
+      "ten": "ECONOMIZER OUTLET TO SELECTIVE CATALYTIC \nREDUCTION A GAS MOTOR-OPERATED VALVE",
+      "macb": "Q8",
+      "cap": "33BKA1088",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33HHD71AA101",
+      "ten": "NOX PORT PF1 AIR DISC ACTUATOR",
+      "macb": "Q9",
+      "cap": "33BKA1476",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33HHD71AA102",
+      "ten": "NOX PORT PF2 AIR DISC ACTUATOR",
+      "macb": "Q10",
+      "cap": "33BKA1477",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33HHD71AA103",
+      "ten": "NOX PORT PF3 AIR DISC ACTUATOR",
+      "macb": "Q11",
+      "cap": "33BKA1478",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33HHD71AA104",
+      "ten": "NOX PORT PF4AIR DISC ACTUATOR",
+      "macb": "Q12",
+      "cap": "33BKA1479",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33HHD71AA105",
+      "ten": "NOX PORT PF5 AIR DISC ACTUATOR",
+      "macb": "Q13",
+      "cap": "33BKA1480",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH005",
+      "thanhcai": "33BJD06GS410"
+    },
+    {
+      "kks": "33LBG02AA202",
+      "ten": "AIR HEATER B COLD END SOOTBLOWER \nMOTOR- OPERATED VALVE",
+      "macb": "Q2",
+      "cap": "33BKA1432",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH006",
+      "thanhcai": "33BJE05GS410"
+    },
+    {
+      "kks": "33LBG02AA201",
+      "ten": "AIR HEATER B HOT END SOOTBLOWER\n MOTOR- OPERATED VALVE",
+      "macb": "Q3",
+      "cap": "33BKA1433",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH006",
+      "thanhcai": "33BJE05GS410"
+    },
+    {
+      "kks": "33H LD02GH101",
+      "ten": "AIR HEATER B 1NSTRUMENT CONTROL PANEL",
+      "macb": "Q4",
+      "cap": "33BKA1434",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH006",
+      "thanhcai": "33BJE05GS410"
+    },
+    {
+      "kks": "33HLD02AC121",
+      "ten": "AIR HEATER B LEAKAGE CONTROL SYSTEM MOTOR 1",
+      "macb": "Q5",
+      "cap": "33BKA1435",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH006",
+      "thanhcai": "33BJE05GS410"
+    },
+    {
+      "kks": "33H LD02AC122",
+      "ten": "AIR HEATER B LEAKAGE CONTROL SYSTEM MOTOR 2",
+      "macb": "Q6",
+      "cap": "33BKA1436",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH006",
+      "thanhcai": "33BJE05GS410"
+    },
+    {
+      "kks": "33HLD02AC123",
+      "ten": "AIR HEATER B LEAKAGE CONTROL SYSTEM MOTOR 3",
+      "macb": "Q7",
+      "cap": "33BKA1437",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH006",
+      "thanhcai": "33BJE05GS410"
+    },
+    {
+      "kks": "33H NA02AA211",
+      "ten": "ECONOMIER OUTLET TO SELECTIVE CATALYTIC\n REDUCTION B GAS MOTOR-OPERATED VALVE",
+      "macb": "Q8",
+      "cap": "33BKA1438",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH006",
+      "thanhcai": "33BJE05GS410"
+    },
+    {
+      "kks": "33HHD81AA104",
+      "ten": "NOX PORT PR4 AIR DISC ACTUATOR",
+      "macb": "Q9",
+      "cap": "33BKA1484",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH006",
+      "thanhcai": "33BJE05GS410"
+    },
+    {
+      "kks": "33HHD81AA105",
+      "ten": "NOX PORT PR5 AIR DISC ACTUATOR",
+      "macb": "Q10",
+      "cap": "33BKA1485",
+      "vitri": "COS 22.3M",
+      "tu": "33BKA00GH006",
+      "thanhcai": "33BJE05GS410"
+    },
+    {
+      "kks": "33HFW11AA202",
+      "ten": "SEAL Al R FAN A OUTLET DAMPER",
+      "macb": "Q1",
+      "cap": "33BKA1101",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH011",
+      "thanhcai": "33BJD06GS210"
+    },
+    {
+      "kks": "33HFW21AA201",
+      "ten": "PULVERIZER A SEAL AIR ELECTRIC DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1102",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH011",
+      "thanhcai": "33BJD06GS210"
+    },
+    {
+      "kks": "33HFW22AA201",
+      "ten": "PULVERIZER B SEAL AIR ELECTRIC DAMPER",
+      "macb": "Q3",
+      "cap": "33BKA1103",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH011",
+      "thanhcai": "33BJD06GS210"
+    },
+    {
+      "kks": "33HFW26AA201",
+      "ten": "PULVERIZER F SEAL AIR ELECTRIC DAMPER",
+      "macb": "Q4",
+      "cap": "33BKA1104",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH011",
+      "thanhcai": "33BJD06GS210"
+    },
+    {
+      "kks": "33HFW11AA001",
+      "ten": "SEAL AIR FAN A INLET DAMPER",
+      "macb": "Q5",
+      "cap": "33BKA1105",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH011",
+      "thanhcai": "33BJD06GS210"
+    },
+    {
+      "kks": "33HFW21AA203",
+      "ten": "PULVER A ROLL WHEEL SEAL AIR ELEC VALVE",
+      "macb": "Q6",
+      "cap": "33BKA1106",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH011",
+      "thanhcai": "33BJD06GS210"
+    },
+    {
+      "kks": "33HFW22AA203",
+      "ten": "PULVER B ROLL WHEEL SEAL AIR ELEC VALVE",
+      "macb": "Q7",
+      "cap": "33BKA1107",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH011",
+      "thanhcai": "33BJD06GS210"
+    },
+    {
+      "kks": "33HFW26AA203",
+      "ten": "PULVER F ROLL WHEEL SEAL AIR ELEC VALVE",
+      "macb": "Q8",
+      "cap": "33BKA1108",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH011",
+      "thanhcai": "33BJD06GS210"
+    },
+    {
+      "kks": "",
+      "ten": "SEAL AIR FAN B OUTLET DAMPER",
+      "macb": "Q1",
+      "cap": "33BKA1121",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH12",
+      "thanhcai": "33BJE05GS210"
+    },
+    {
+      "kks": "",
+      "ten": "PULVERIZER C SEAL AIR ELENTRIC DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1122",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH12",
+      "thanhcai": "33BJE05GS210"
+    },
+    {
+      "kks": "",
+      "ten": "PULVERIZER D SEAL AIR ELENTRIC DAMPER",
+      "macb": "Q3",
+      "cap": "33BKA1123",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH12",
+      "thanhcai": "33BJE05GS210"
+    },
+    {
+      "kks": "",
+      "ten": "PULVERIZER E SEAL AIR ELENTRIC DAMPER",
+      "macb": "Q4",
+      "cap": "33BKA1124",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH12",
+      "thanhcai": "33BJE05GS210"
+    },
+    {
+      "kks": "",
+      "ten": "SEAL AIR FAN B INLET DAMPER",
+      "macb": "Q5",
+      "cap": "33BKA1125",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH12",
+      "thanhcai": "33BJE05GS210"
+    },
+    {
+      "kks": "",
+      "ten": "PULVERIZER C  ROLL WHEEL SEAL AIR ELECTRIC VALVE",
+      "macb": "Q6",
+      "cap": "33BKA1126",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH12",
+      "thanhcai": "33BJE05GS210"
+    },
+    {
+      "kks": "",
+      "ten": "PULVERIZER D  ROLL WHEEL SEAL AIR ELECTRIC VALVE",
+      "macb": "Q7",
+      "cap": "33BKA1127",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH12",
+      "thanhcai": "33BJE05GS210"
+    },
+    {
+      "kks": "",
+      "ten": "PULVERIZER E  ROLL WHEEL SEAL AIR ELECTRIC VALVE",
+      "macb": "Q8",
+      "cap": "33BKA1128",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH12",
+      "thanhcai": "33BJE05GS210"
+    },
+    {
+      "kks": "",
+      "ten": "COLD PRIMARY AIR DAMPER",
+      "macb": "Q1",
+      "cap": "33BKA1141",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH13",
+      "thanhcai": "33BJD06GS230"
+    },
+    {
+      "kks": "",
+      "ten": "COLD PRIMARY AIR DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1142",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH13",
+      "thanhcai": "33BJD06GS230"
+    },
+    {
+      "kks": "",
+      "ten": "COLD PRIMARY AIR DAMPER",
+      "macb": "Q3",
+      "cap": "33BKA1143",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH13",
+      "thanhcai": "33BJD06GS230"
+    },
+    {
+      "kks": "",
+      "ten": "HOT PRIMARY AIR DAMPER",
+      "macb": "Q6",
+      "cap": "33BKA1146",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH13",
+      "thanhcai": "33BJD06GS230"
+    },
+    {
+      "kks": "",
+      "ten": "HOT PRIMARY AIR DAMPER",
+      "macb": "Q7",
+      "cap": "33BKA1147",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH13",
+      "thanhcai": "33BJD06GS230"
+    },
+    {
+      "kks": "",
+      "ten": "HOT PRIMARY AIR DAMPER",
+      "macb": "Q8",
+      "cap": "33BKA1148",
+      "vitri": "COS 0M",
+      "tu": "33BKA00GH13",
+      "thanhcai": "33BJD06GS230"
+    },
+    {
+      "kks": "33H LA73AA001",
+      "ten": "COLD PRIMARY AIR DAMPER",
+      "macb": "Q2",
+      "cap": "33BKA1162",
+      "vitri": "T/G BULIDING COS 0M",
+      "tu": "33BKA00GH014",
+      "thanhcai": "33BJE05GS230"
+    },
+    {
+      "kks": "33H LA74AA001",
+      "ten": "COLD PRIMARY AIR DAMPER",
+      "macb": "Q3",
+      "cap": "33BKA1163",
+      "vitri": "T/G BULIDING COS 0M",
+      "tu": "33BKA00GH014",
+      "thanhcai": "33BJE05GS230"
+    },
+    {
+      "kks": "33H LA75AA001",
+      "ten": "COLD PRIMARY AIR DAMPER",
+      "macb": "Q4",
+      "cap": "33BKA1164",
+      "vitri": "T/G BULIDING COS 0M",
+      "tu": "33BKA00GH014",
+      "thanhcai": "33BJE05GS230"
+    },
+    {
+      "kks": "33HLA83AA001",
+      "ten": "HOT PRIMARY AIR DAMPER",
+      "macb": "Q7",
+      "cap": "33BKA1167",
+      "vitri": "T/G BULIDING COS 0M",
+      "tu": "33BKA00GH014",
+      "thanhcai": "33BJE05GS230"
+    },
+    {
+      "kks": "33H LA84AA001",
+      "ten": "HOT PRIMARY AIR DAMPER",
+      "macb": "Q8",
+      "cap": "33BKA1168",
+      "vitri": "T/G BULIDING COS 0M",
+      "tu": "33BKA00GH014",
+      "thanhcai": "33BJE05GS230"
+    },
+    {
+      "kks": "33H LA85AA001",
+      "ten": "HOT PRIMARY AIR DAMPER",
+      "macb": "Q9",
+      "cap": "33BKA1169",
+      "vitri": "T/G BULIDING COS 0M",
+      "tu": "33BKA00GH014",
+      "thanhcai": "33BJE05GS230"
+    },
+    {
+      "kks": "39SAC10AH931",
+      "ten": "E/C BUILDING 17.2m AIR-COOLED CASSETTE \nTYPE AI R CONDITIONER 1",
+      "macb": "Q1",
+      "cap": "33BKA1261",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH025",
+      "thanhcai": "33BMC08GS100"
+    },
+    {
+      "kks": "39SAC10AH932",
+      "ten": "E/C BUILDING 17.2m AIR-COOLED CASSETTE TYPE AI R CONDITIONER 2",
+      "macb": "Q2",
+      "cap": "33BKA1262",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH025",
+      "thanhcai": "33BMC08GS100"
+    },
+    {
+      "kks": "39SAC10AH933",
+      "ten": "E/C BUILDING 17.2m AIR-COOLED CASSETTE \nTYPE AI R CONDITIONER 3",
+      "macb": "Q3",
+      "cap": "33BKA1263",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH025",
+      "thanhcai": "33BMC08GS100"
+    },
+    {
+      "kks": "39SAC10AH934",
+      "ten": "E/C BUILDING 17.2m AIR-COOLED CASSETTE TYPE AI R CONDITIONER 4",
+      "macb": "Q4",
+      "cap": "33BKA1264",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH025",
+      "thanhcai": "33BMC08GS100"
+    },
+    {
+      "kks": "39SAC10AH935",
+      "ten": "E/C BUILDING 17.2m AIR-COOLED CASSETTE \nTYPE AI R CONDITIONER 5",
+      "macb": "Q5",
+      "cap": "33BKA1265",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH025",
+      "thanhcai": "33BMC08GS100"
+    },
+    {
+      "kks": "39SAC10AH936",
+      "ten": "E/C BUILDING 17.2m AIR-COOLED CASSETTE TYPE AI R CONDITIONER 6",
+      "macb": "Q6",
+      "cap": "33BKA1266",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH025",
+      "thanhcai": "33BMC08GS100"
+    },
+    {
+      "kks": "39SAC10AH937",
+      "ten": "E/C BUILDING 17.2m AIR-COOLED CASSETTE \nTYPE AI R CONDITIONER 7",
+      "macb": "Q7",
+      "cap": "33BKA1267",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH025",
+      "thanhcai": "33BMC08GS100"
+    },
+    {
+      "kks": "39SAC10AH938",
+      "ten": "E/C BUILDING 17.2m AIR-COOLED CASSETTE \nTYPE AI R CONDITIONER 8",
+      "macb": "Q8",
+      "cap": "33BKA1268",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH025",
+      "thanhcai": "33BMC08GS100"
+    },
+    {
+      "kks": "39SAC10AH939",
+      "ten": "E/C BUILDING 17.2m AIR-COOLED CASSETTE\n TYPE AI R CONDITIONER 9",
+      "macb": "Q9",
+      "cap": "33BKA1269",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH025",
+      "thanhcai": "33BMC08GS100"
+    },
+    {
+      "kks": "33HFB10AA201",
+      "ten": "COAL FEEDER A INLET GATE ACTUATOR",
+      "macb": "Q1",
+      "cap": "33BKA1181",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH015",
+      "thanhcai": "33BJD06GS810"
+    },
+    {
+      "kks": "33HFB20AA201",
+      "ten": "COAL FEEDER B 1NLET GATE ACTUATOR",
+      "macb": "Q2",
+      "cap": "33BKA1182",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH015",
+      "thanhcai": "33BJD06GS810"
+    },
+    {
+      "kks": "33HFB60AA201",
+      "ten": "COAL FEEDER FINLET GATE ACTUATOR",
+      "macb": "Q3",
+      "cap": "33BKA1183",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH015",
+      "thanhcai": "33BJD06GS810"
+    },
+    {
+      "kks": "33HFW21AA202",
+      "ten": "COAL FEEDER A SEAL AIR ELECTRIC DAMPER",
+      "macb": "Q4",
+      "cap": "33BKA1184",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH015",
+      "thanhcai": "33BJD06GS810"
+    },
+    {
+      "kks": "33HFW22AA202",
+      "ten": "COAL FEEDER B SEAL AIR ELECTRIC DAMPER",
+      "macb": "Q5",
+      "cap": "33BKA1185",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH015",
+      "thanhcai": "33BJD06GS810"
+    },
+    {
+      "kks": "33HFW26AA202",
+      "ten": "COAL FEEDER F SEAL AIR ELECTRIC DAMPER",
+      "macb": "Q6",
+      "cap": "33BKA1186",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH015",
+      "thanhcai": "33BJD06GS810"
+    },
+    {
+      "kks": "33HFB30AA201",
+      "ten": "COAL FEEDER CINLET GATE ACTUATOR",
+      "macb": "Q1",
+      "cap": "33BKA1201",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH016",
+      "thanhcai": "33BJE05GS430"
+    },
+    {
+      "kks": "33HFB40AA201",
+      "ten": "COAL FEEDER D INLET GATE ACTUATOR",
+      "macb": "Q2",
+      "cap": "33BKA1202",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH016",
+      "thanhcai": "33BJE05GS430"
+    },
+    {
+      "kks": "33HFB50AA201",
+      "ten": "COAL FEEDER EINLET GATE ACTUATOR",
+      "macb": "Q3",
+      "cap": "33BKA1203",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH016",
+      "thanhcai": "33BJE05GS430"
+    },
+    {
+      "kks": "33HFW23AA202",
+      "ten": "COAL FEEDER C SEAL AIR ELECTRIC DAMPER",
+      "macb": "Q4",
+      "cap": "33BKA1204",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH016",
+      "thanhcai": "33BJE05GS430"
+    },
+    {
+      "kks": "33HFW24AA202",
+      "ten": "COAL FEEDER D SEAL AIR ELECTRIC DAMPER",
+      "macb": "Q5",
+      "cap": "33BKA1205",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH016",
+      "thanhcai": "33BJE05GS430"
+    },
+    {
+      "kks": "33HFW25AA202",
+      "ten": "COAL FEEDER E SEAL AIR ELECTRIC DAMPER",
+      "macb": "Q6",
+      "cap": "33BKA1206",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH016",
+      "thanhcai": "33BJE05GS430"
+    },
+    {
+      "kks": "33HFB30AA202",
+      "ten": "COAL FEEDER C OUTLET GATE ACTUATOR",
+      "macb": "Q13",
+      "cap": "33BKA1213",
+      "vitri": "COS 16.2M",
+      "tu": "33BKA00GH016",
+      "thanhcai": "33BJE05GS430"
+    },
+    {
+      "kks": "33CFF02GH001",
+      "ten": "UNIT AUXILIARY TRANSFORMER TRANSDUCER \nPANEL AUXILIARY POWER",
+      "macb": "Q1",
+      "cap": "33BKA1221",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH021",
+      "thanhcai": "33BJD06GS130"
+    },
+    {
+      "kks": "33CEQ01GH001",
+      "ten": "DIGITAL FAULT RECORDER AUXILIARY POWER",
+      "macb": "Q2",
+      "cap": "33BKA1221",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH021",
+      "thanhcai": "33BJD06GS130"
+    },
+    {
+      "kks": "33MKY01GH001",
+      "ten": "AUTO VOLTAGE REGULATOR (AVR) CUBICLE (MISCELLANEOUS)",
+      "macb": "Q3",
+      "cap": "33BKA1013",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH021",
+      "thanhcai": "33BJD06GS130"
+    },
+    {
+      "kks": "33MKY02GH001",
+      "ten": "GENERATOR PROTECTION RELAY PANEL (GPR) (MISCELLANEOUS)",
+      "macb": "Q4",
+      "cap": "33BKA1014",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH021",
+      "thanhcai": "33BJD06GS130"
+    },
+    {
+      "kks": "33MKY20",
+      "ten": "DC MOTOR STARTER (MISCELLANEOUS)",
+      "macb": "Q5",
+      "cap": "33BKA1225",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH021",
+      "thanhcai": "33BJD06GS130"
+    },
+    {
+      "kks": "33HCB00GH100",
+      "ten": "SOOTBALOWER PLC OPERATOR PANEL",
+      "macb": "Q1",
+      "cap": "33BKA1241",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH022",
+      "thanhcai": "33BJD06GS430"
+    },
+    {
+      "kks": "33MAY01GH004",
+      "ten": "DIGITAL-ELECTROHYDRAULIC CONTROL (D-EHC) CUBICLE (MISCELLANEOUS)",
+      "macb": "Q2",
+      "cap": "33BKA1242",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH022",
+      "thanhcai": "33BJD06GS430"
+    },
+    {
+      "kks": "33CRA10GH201",
+      "ten": "DCS POWER DISTRIBUTION CABINET",
+      "macb": "Q3",
+      "cap": "33BKA1243",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH022",
+      "thanhcai": "33BJD06GS430"
+    },
+    {
+      "kks": "33HLS00GH100",
+      "ten": "PULVERIZER REARWALL(A/B/F) BURNER&IGNITOR\n MAIN FLAME SCANNER CABINET",
+      "macb": "Q4",
+      "cap": "33BKA1244",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH022",
+      "thanhcai": "33BJD06GS430"
+    },
+    {
+      "kks": "33HLS00GH101",
+      "ten": "PULVERIZER FRONTWALL(C/D/E) BURNER&IGNITOR\nMAIN FLAME SCANNER CABINET",
+      "macb": "Q5",
+      "cap": "33BKA1245",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH022",
+      "thanhcai": "33BJD06GS430"
+    },
+    {
+      "kks": "33MAY02GH002",
+      "ten": "TURBINE PROTECTION CABINET (MISCELLANEOUS)",
+      "macb": "Q6",
+      "cap": "33BKA1246",
+      "vitri": "COS 9.1M",
+      "tu": "33BKA00GH022",
+      "thanhcai": "33BJD06GS430"
+    }
+  ],
+  "máy": [
+    {
+      "kks": "33PCB21AA201",
+      "ten": "AUXILIARY CIRCULATING WATER\n PUPM A DSCHARGE MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q.2",
+      "cap": "33BKA1271",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH031",
+      "thanhcai": "33BJA06GS710"
+    },
+    {
+      "kks": "33PCB21AA202",
+      "ten": "AUXILIARY CIRCULATING WATER\n PUPM A SUCTION MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q.3",
+      "cap": "33BKA1272",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH031",
+      "thanhcai": "33BJA06GS710"
+    },
+    {
+      "kks": "33PCB31AA201",
+      "ten": "CLOSED CYCLE COOLING WATER\n EXCHANGER A INLET MOTOR - OPERATION BLOCK VALVE",
+      "macb": "Q.4",
+      "cap": "33BKA1273",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH031",
+      "thanhcai": "33BJA06GS710"
+    },
+    {
+      "kks": "33PCB31AA202",
+      "ten": "CLOSED CYCLE COOLING WATER\n EXCHANGER A OUTLET MOTOR - OPERATION BLOCK VALVE",
+      "macb": "Q.5",
+      "cap": "33BKA1274",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH031",
+      "thanhcai": "33BJA06GS710"
+    },
+    {
+      "kks": "33LCA11AA201",
+      "ten": "CONDENSATE PUMP A DISCHARGE ISOLATION VALVE",
+      "macb": "Q.6",
+      "cap": "33BKA1275",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH031",
+      "thanhcai": "33BJA06GS710"
+    },
+    {
+      "kks": "33LCA10AA201",
+      "ten": "CONDENSATE PUMP A SUCTION\n ISOLATION VALVE",
+      "macb": "Q.7",
+      "cap": "33BKA1276",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH031",
+      "thanhcai": "33BJA06GS710"
+    },
+    {
+      "kks": "33PGA21AA202",
+      "ten": "CLOSED CYCLE COOLING WATER\n EXCHANGER A OUTLET MOTOR - OPERATION BLOCK VALVE",
+      "macb": "Q.8",
+      "cap": "33BKA1277",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH031",
+      "thanhcai": "33BJA06GS710"
+    },
+    {
+      "kks": "33PAB31AA201",
+      "ten": "CONDENSER CIRCULATING WATER INLET VALVE A",
+      "macb": "Q.9",
+      "cap": "33BKA1278",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH031",
+      "thanhcai": "33BJA06GS710"
+    },
+    {
+      "kks": "33PAB41AA201",
+      "ten": "CONDENSER CIRCULATING WATER OUTLET VALVE A",
+      "macb": "Q.10",
+      "cap": "33BKA1279",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH031",
+      "thanhcai": "33BJA06GS710"
+    },
+    {
+      "kks": "33PCB22AA201",
+      "ten": "AUXILIARY CIRCULATING WATER\n PUPM B DSCHARGE MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q.2",
+      "cap": "33BKA1281",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH032",
+      "thanhcai": "33BJB06GS310"
+    },
+    {
+      "kks": "33PCB22AA202",
+      "ten": "AUXILIARY CIRCULATING WATER\n PUPM B SUCTION MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q.3",
+      "cap": "33BKA1282",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH032",
+      "thanhcai": "33BJB06GS310"
+    },
+    {
+      "kks": "33PCB32AA201",
+      "ten": "CLOSED CYCLE COOLING WATER\n EXCHANGER B INLET MOTOR - OPERATION BLOCK VALVE",
+      "macb": "Q.4",
+      "cap": "33BKA1283",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH032",
+      "thanhcai": "33BJB06GS310"
+    },
+    {
+      "kks": "33PCB32AA202",
+      "ten": "CLOSED CYCLE COOLING WATER\n EXCHANGER B OUTLET MOTOR - OPERATION BLOCK VALVE",
+      "macb": "Q.5",
+      "cap": "33BKA1284",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH032",
+      "thanhcai": "33BJB06GS310"
+    },
+    {
+      "kks": "33LCA21AA201",
+      "ten": "CONDENSATE PUMP B DISCHARGE ISOLATION VALVE",
+      "macb": "Q.6",
+      "cap": "33BKA1285",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH032",
+      "thanhcai": "33BJB06GS310"
+    },
+    {
+      "kks": "33LCA20AA201",
+      "ten": "CONDENSATE PUMP B SUCTION\n ISOLATION VALVE",
+      "macb": "Q.7",
+      "cap": "33BKA1286",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH032",
+      "thanhcai": "33BJB06GS310"
+    },
+    {
+      "kks": "33PGA22AA202",
+      "ten": "CLOSED CYCLE COOLING WATER\n EXCHANGER B OUTLET MOTOR - OPERATION BLOCK VALVE",
+      "macb": "Q.8",
+      "cap": "33BKA1287",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH032",
+      "thanhcai": "33BJB06GS310"
+    },
+    {
+      "kks": "33PAB32AA201",
+      "ten": "CONDENSER CIRCULATING WATER INLET VALVE B",
+      "macb": "Q.9",
+      "cap": "33BKA1288",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH032",
+      "thanhcai": "33BJB06GS310"
+    },
+    {
+      "kks": "33PAB42AA201",
+      "ten": "CONDENSER CIRCULATING WATER OUTLET VALVE B",
+      "macb": "Q.10",
+      "cap": "33BKA1289",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH032",
+      "thanhcai": "33BJB06GS310"
+    },
+    {
+      "kks": "33BAT10GH012",
+      "ten": "500KV CAPACITOR TYPE VOLTAGE\nTRANSFORMER 1 COMMON TERMINAL\n BOX HEATER AND LIGHTING",
+      "macb": "Q. 1",
+      "cap": "33BAT1112",
+      "vitri": "COS 0.0 M GẦN ĐƯỜNG VÀO PHÒNG ĐIỆN GIAN TUABIN",
+      "tu": "33BKA00GH033",
+      "thanhcai": "33BJC06GS530"
+    },
+    {
+      "kks": "33BAT10GH013",
+      "ten": "500KV CAPACITOR TYPE VOLTAGE\nTRANSFORMER 2 COMMON TERMINAL\n BOX HEATER AND LIGHTING",
+      "macb": "Q. 2",
+      "cap": "33BAT1113",
+      "vitri": "COS 0.0 M GẦN ĐƯỜNG VÀO PHÒNG ĐIỆN GIAN TUABIN",
+      "tu": "33BKA00GH033",
+      "thanhcai": "33BJC06GS530"
+    },
+    {
+      "kks": "33BAT10GH011",
+      "ten": "500KV CURRENT TRANSFORMER COMMON TERMINAL BOX HEATER AND LIGHTING",
+      "macb": "Q. 3",
+      "cap": "33BAT1114",
+      "vitri": "COS 0.0 M GẦN ĐƯỜNG VÀO PHÒNG ĐIỆN GIAN TUABIN",
+      "tu": "33BKA00GH033",
+      "thanhcai": "33BJC06GS530"
+    },
+    {
+      "kks": "33BAA21GT001",
+      "ten": "ISOLATED PHASE BUSSBAR(IPB) VOLTAGE \nTRANSFORMER 1 CUBICLE HEATER AND LIGHTING",
+      "macb": "Q. 4",
+      "cap": "33BAA1001",
+      "vitri": "COS 0.0 M GẦN ĐƯỜNG VÀO PHÒNG ĐIỆN GIAN TUABIN",
+      "tu": "33BKA00GH033",
+      "thanhcai": "33BJC06GS530"
+    },
+    {
+      "kks": "33BAA45GT001",
+      "ten": "ISOLATED PHASE BUSSBAR(IPB) VOLTAGE \nTRANSFORMER 2 CUBICLE HEATER AND LIGHTING",
+      "macb": "Q. 5",
+      "cap": "33BAA1002",
+      "vitri": "COS 0.0 M GẦN ĐƯỜNG VÀO PHÒNG ĐIỆN GIAN TUABIN",
+      "tu": "33BKA00GH033",
+      "thanhcai": "33BJC06GS530"
+    },
+    {
+      "kks": "33BAA80GH001",
+      "ten": "ISOLATED PHASE BUSSBAR(IPB) CURRENT\nTRANSFORMER BOX 1 CUBICLE HEATER AND LIGHTING",
+      "macb": "Q. 6",
+      "cap": "33BAA1003",
+      "vitri": "COS 0.0 M GẦN ĐƯỜNG VÀO PHÒNG ĐIỆN GIAN TUABIN",
+      "tu": "33BKA00GH033",
+      "thanhcai": "33BJC06GS530"
+    },
+    {
+      "kks": "33BAA81GH001",
+      "ten": "ISOLATED PHASE BUSSBAR(IPB) CURRENT\nTRANSFORMER BOX 2 CUBICLE HEATER AND LIGHTING",
+      "macb": "Q. 7",
+      "cap": "33BAA1004",
+      "vitri": "COS 0.0 M GẦN ĐƯỜNG VÀO PHÒNG ĐIỆN GIAN TUABIN",
+      "tu": "33BKA00GH033",
+      "thanhcai": "33BJC06GS530"
+    },
+    {
+      "kks": "33BAC10GH001",
+      "ten": "HEATING AND INTERNAL LIGHTING OF GENERTOR\n CIRCUIT BREAKER(GCB)",
+      "macb": "Q. 9",
+      "cap": "33BAA1005",
+      "vitri": "COS 0.0 M GẦN ĐƯỜNG VÀO PHÒNG ĐIỆN GIAN TUABIN",
+      "tu": "33BKA00GH033",
+      "thanhcai": "33BJC06GS530"
+    },
+    {
+      "kks": "33BAC10GH002",
+      "ten": "DRIVE OF DISCONNECTOR AND EARTHING SWITCH\nOF GENERATOR CIRCUIT BREAKER(GCB)",
+      "macb": "Q. 13",
+      "cap": "33BAC101",
+      "vitri": "COS 0.0 M GẦN ĐƯỜNG VÀO PHÒNG ĐIỆN GIAN TUABIN",
+      "tu": "33BKA00GH033",
+      "thanhcai": "33BJC06GS530"
+    },
+    {
+      "kks": "33PCB20AA201",
+      "ten": "AUXILIARY CIRCULATING WATER PUMP SUCTION\nBYPASS MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1291",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH034",
+      "thanhcai": "33BJC06GS510"
+    },
+    {
+      "kks": "33PCB80AA852",
+      "ten": "DEBRIS FILTER PUMP DSCHARGE MOTOR\n - OPERATED BLOCK VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1293",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH034",
+      "thanhcai": "33BJC06GS510"
+    },
+    {
+      "kks": "33UMA01GH001",
+      "ten": "TURBINE BUILDING ROLLING DOOR 100-A",
+      "macb": "Q. 5",
+      "cap": "33BKA1294",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH034",
+      "thanhcai": "33BJC06GS510"
+    },
+    {
+      "kks": "33UMA01GH002",
+      "ten": "TURBINE BUILDING ROLLING DOOR 100-B",
+      "macb": "Q. 6",
+      "cap": "33BKA1295",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH034",
+      "thanhcai": "33BJC06GS510"
+    },
+    {
+      "kks": "33UMA01GH003",
+      "ten": "TURBINE BUILDING ROLLING DOOR 100-D",
+      "macb": "Q. 7",
+      "cap": "33BKA1296",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH034",
+      "thanhcai": "33BJC06GS510"
+    },
+    {
+      "kks": "33PCB10AA201",
+      "ten": "AUXILIARY CIRCULATING WATER PUMP STRAINER\nINLET MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 11",
+      "cap": "33BKA1270",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH034",
+      "thanhcai": "33BJC06GS510"
+    },
+    {
+      "kks": "33PCB10AA202",
+      "ten": "AUXILIARY CIRCULATING WATER PUMP STRAINER\nOUTLET MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 12",
+      "cap": "33BKA1280",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH034",
+      "thanhcai": "33BJC06GS510"
+    },
+    {
+      "kks": "33GUA09GH001",
+      "ten": "STORM DRAIN PUMP(TDP-9)",
+      "macb": "Q. 13",
+      "cap": "33BKA1290",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH034",
+      "thanhcai": "33BJC06GS510"
+    },
+    {
+      "kks": "33GUA10GH001",
+      "ten": "STORM DRAIN PUMP(TDP-10)",
+      "macb": "Q. 14",
+      "cap": "33BKA1292",
+      "vitri": "COS 0.0 M GẦN BỘ LÀM MÁT NƯỚC\n MẠCH HỞ",
+      "tu": "33BKA00GH034",
+      "thanhcai": "33BJC06GS510"
+    },
+    {
+      "kks": "33LCD20AA201",
+      "ten": "CONDENSATE TRANSFER PUMP DISCHARGE ISOLATION VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1300",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33LCD24AA201",
+      "ten": "DEMINERALIZED WATER FOR STRTUP ISOLATION VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1302",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33LDB10AA001",
+      "ten": "CARTRIDGE FlLTER BYPASS ELECTRIC VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1303",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33LDF10AA001",
+      "ten": "MIXED BED BYPASS ELECTRIC VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1304",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33GCK64AA201",
+      "ten": "CONDENSATE MAKEUP CONTROL VALVE INLET ISOLATION VALVE",
+      "macb": "Q. 6",
+      "cap": "33BKA1305",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33MAF11AA201",
+      "ten": "TURBINE LUBE 01LTRANSFER PUMP SUCTION \nMOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 7",
+      "cap": "33BKA1306",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33MAF13AA201",
+      "ten": "DIRTY LU BE OILTOTURBINE LUBE OILCONDITION ISOLATION VALVE",
+      "macb": "Q. 8",
+      "cap": "33BKA1307",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33MAF14AA503",
+      "ten": "TURBINE LUBE OILCONDITION OUTLET ISOLATION VALVE",
+      "macb": "Q. 9",
+      "cap": "33BKA1308",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33MAF14AA504",
+      "ten": "TURBINE LUBE OILCONDITION OUTLET ISOLATION VALVE",
+      "macb": "Q. 10",
+      "cap": "33BKA1309",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33GUA08GH001",
+      "ten": "STORM DRAIN PUMP (TDP-8)",
+      "macb": "Q. 13",
+      "cap": "33BKA1301",
+      "vitri": "COS 0.0 M ĐỐI DIỆN PHÒNG ĐIỀU KHIỂN MÁY PHÓ",
+      "tu": "33BKA00GH035",
+      "thanhcai": "33BJC06GS310"
+    },
+    {
+      "kks": "33LAB13AA201",
+      "ten": "BOILER FEED PUMP A DISCHARGE ISOLATION VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1310",
+      "vitri": "COS 0.0 M GẦN BƠM CẤP ĐIỆN",
+      "tu": "33BKA00GH036",
+      "thanhcai": "33BJC07GS300"
+    },
+    {
+      "kks": "33LAB23AA201",
+      "ten": "BOILER FEED PUMP B DISCHARGE ISOLATION VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1311",
+      "vitri": "COS 0.0 M GẦN BƠM CẤP ĐIỆN",
+      "tu": "33BKA00GH036",
+      "thanhcai": "33BJC07GS300"
+    },
+    {
+      "kks": "33LAB33AA201",
+      "ten": "BOILER FEED PUMP c DISCHARGE ISOLATION VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1312",
+      "vitri": "COS 0.0 M GẦN BƠM CẤP ĐIỆN",
+      "tu": "33BKA00GH036",
+      "thanhcai": "33BJC07GS300"
+    },
+    {
+      "kks": "33LAB13AA203",
+      "ten": "BOILER FEED PUMP A DISCHARGE ISOLATION BYPASS VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1625",
+      "vitri": "COS 0.0 M GẦN BƠM CẤP ĐIỆN",
+      "tu": "33BKA00GH036",
+      "thanhcai": "33BJC07GS300"
+    },
+    {
+      "kks": "33LAB33AA203",
+      "ten": "BOILER FEED PUMP c DISCHARGE ISOLATION BYPASS VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1626",
+      "vitri": "COS 0.0 M GẦN BƠM CẤP ĐIỆN",
+      "tu": "33BKA00GH036",
+      "thanhcai": "33BJC07GS300"
+    },
+    {
+      "kks": "33PGA11AA201",
+      "ten": "CLOSED CYCLE COOLING VVATER PUMPASUCTION ISOLATION VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1315",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH041",
+      "thanhcai": "33BJA04GS300"
+    },
+    {
+      "kks": "33PGA11AA202",
+      "ten": "CLOSED CYCLE COOLING VVATER PUMP A DISCHARGE \nISOLATION VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1316",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH041",
+      "thanhcai": "33BJA04GS300"
+    },
+    {
+      "kks": "33PGA21AA201",
+      "ten": "CLOSED CYCLE COOLING WATER HEAT EXCHANGER A \nINLET ISOLATION VAVLE",
+      "macb": "Q. 3",
+      "cap": "33BKA1317",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH041",
+      "thanhcai": "33BJA04GS300"
+    },
+    {
+      "kks": "33PGA12AA201",
+      "ten": "CLOSED CYCLE COOLING VVATER PUMP B SUCTION ISOLATION VAVLE",
+      "macb": "Q. 1",
+      "cap": "33BKA1320",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH042",
+      "thanhcai": "33BJB04GS300"
+    },
+    {
+      "kks": "33PGA12AA202",
+      "ten": "CLOSED CYCLE COOLING WATER PUMP B DISCHARGE \nISOLATION VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1321",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH042",
+      "thanhcai": "33BJB04GS300"
+    },
+    {
+      "kks": "33PGA22AA201",
+      "ten": "CLOSED CYCLE COOLING VVATER HEAT EXCHANGER B \nINLET ISOLATION VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1322",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH042",
+      "thanhcai": "33BJB04GS300"
+    },
+    {
+      "kks": "33MAL05AA852",
+      "ten": "MAIN STOP VALVE (MSV) (A) AFTER SEAT DRAIN VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1325",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH043",
+      "thanhcai": "33BJA06GS730"
+    },
+    {
+      "kks": "33MAL09AA852",
+      "ten": "LEAD PIPE DRAIN VALVE(A)",
+      "macb": "Q. 2",
+      "cap": "33BKA1326",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH043",
+      "thanhcai": "33BJA06GS730"
+    },
+    {
+      "kks": "33MAL21AA851",
+      "ten": "COMBINED REHEAT VALVE (CRV) (A) AFTER SEAT DRAIN VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1327",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH043",
+      "thanhcai": "33BJA06GS730"
+    },
+    {
+      "kks": "33MAL07AA852",
+      "ten": "MAI N STOP VALVE (MSV) (C) AFTER SEAT DRAIN VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1328",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH043",
+      "thanhcai": "33BJA06GS730"
+    },
+    {
+      "kks": "33MAL06AA852",
+      "ten": "MAI N STOP VALVE (MSV) (B) AFTER SEAT DRAIN VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1329",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH044",
+      "thanhcai": "33BJB06GS810"
+    },
+    {
+      "kks": "33MAL10AA852",
+      "ten": "LEAD PIPE DRAIN VALVE(B)",
+      "macb": "Q. 2",
+      "cap": "33BKA1330",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH044",
+      "thanhcai": "33BJB06GS810"
+    },
+    {
+      "kks": "33MAL08AA852",
+      "ten": "MAI N STOP VALVE (MSV) (D) AFTER SEAT DRAI N VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1331",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH044",
+      "thanhcai": "33BJB06GS810"
+    },
+    {
+      "kks": "33MAL22AA851",
+      "ten": "COMBINED REHEAT VALVE (CRV) (B) AFTER SEAT DRAIN VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1332",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH044",
+      "thanhcai": "33BJB06GS810"
+    },
+    {
+      "kks": "33MAN10GH001",
+      "ten": "HIGH PRESSURE BYPASS HYDRAULIC CONTROL SYSTEM",
+      "macb": "Q. 11",
+      "cap": "33BKA1439",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH044",
+      "thanhcai": "33BJB06GS810"
+    },
+    {
+      "kks": "33MAP10GH001",
+      "ten": "LOW PRESSURE BYPASS HYDRAULIC CONTROL SYSTEM",
+      "macb": "Q. 12",
+      "cap": "33BKA1440",
+      "vitri": "COS 8.0M GẦN DƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH044",
+      "thanhcai": "33BJB06GS810"
+    },
+    {
+      "kks": "33LCA50AA202",
+      "ten": "CONDENSER TO HEATER 6 INLET ISOLATION MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1333",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH045",
+      "thanhcai": "33BJC06GS330"
+    },
+    {
+      "kks": "33LCA51AA201",
+      "ten": "LOW PRESSURE HEATER 6 BYPASS ISOLATION MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1334",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH045",
+      "thanhcai": "33BJC06GS330"
+    },
+    {
+      "kks": "33LCA60AA201",
+      "ten": "LOW PRESSURE HEATER 6 OUTLET ISOLATION MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1335",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH045",
+      "thanhcai": "33BJC06GS330"
+    },
+    {
+      "kks": "33PGA42AA201",
+      "ten": "CLOSED CYCLE COOLING WATER HEADER TO MOTOR-DRIVEN BOILER \nFEED PUMPAVALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1336",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH045",
+      "thanhcai": "33BJC06GS330"
+    },
+    {
+      "kks": "33PGA44AA201",
+      "ten": "CLOSED CYCLE COOLING VVATER HEADER TO MOTOR-DRIVEN BOILER FEED PUMP B VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1337",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH045",
+      "thanhcai": "33BJC06GS330"
+    },
+    {
+      "kks": "33PGA47AA201",
+      "ten": "CLOSED CYCLE COOLING VVATER HEADER TO MOTOR-DRIVEN BOILER FEED \nPUMP C VALVE",
+      "macb": "Q. 6",
+      "cap": "33BKA1338",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH045",
+      "thanhcai": "33BJC06GS330"
+    },
+    {
+      "kks": "33LCK70AA853",
+      "ten": "#7 FEED WATER HEATER SHELL SIDE VENTLINE GATE VALVE",
+      "macb": "Q. 7",
+      "cap": "33BKA1441",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH045",
+      "thanhcai": "33BJC06GS330"
+    },
+    {
+      "kks": "33LCK80AA853",
+      "ten": "#8 FEED WATER HEATER SHELL SIDE VENTLINE GATE VALVE",
+      "macb": "Q. 8",
+      "cap": "33BKA1468",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH045",
+      "thanhcai": "33BJC06GS330"
+    },
+    {
+      "kks": "33LAF31AA201",
+      "ten": "1NTERSTAGE BLEED ISOLATION VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1339",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH046",
+      "thanhcai": "BJC07GS400"
+    },
+    {
+      "kks": "33LAF21AA201",
+      "ten": "1NTERSTAGE BLEED ISOLATION VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1340",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH046",
+      "thanhcai": "BJC07GS400"
+    },
+    {
+      "kks": "33LAF11AA201",
+      "ten": "1NTERSTAGE BLEED ISOLATION VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1341",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH046",
+      "thanhcai": "BJC07GS400"
+    },
+    {
+      "kks": "33LAB40AA201",
+      "ten": "BOILER FlLLING ISOLAITON VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1342",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH046",
+      "thanhcai": "BJC07GS400"
+    },
+    {
+      "kks": "33LAB40AA202",
+      "ten": "HIGH PRESSURE HEATER 3 INLET VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1343",
+      "vitri": "COS 8.0M GẦN CẦU THANG LÊN TỦ 400V",
+      "tu": "33BKA00GH046",
+      "thanhcai": "BJC07GS400"
+    },
+    {
+      "kks": "33MAF16AA201",
+      "ten": "LUBE 0IL RETURN TO DIRTY LU BE OILTANK VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1347",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33MAF15AA201",
+      "ten": "LUBE 0IL RETURN TO DIRTY LU BE OILTANK VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1348",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33MAF17AA201",
+      "ten": "LUBE 0IL RETURN TO LU BE OILTANK VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1349",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33MAW12AA201",
+      "ten": "GLAND STEAM SEAL FEED BYPASS VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1350",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33MAW52AA201",
+      "ten": "GLAND STEAM PACKING UNLOADING BYPASS VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1351",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33MAW11AA201",
+      "ten": "GLAND STEAM FEED ISOLATION VALVE",
+      "macb": "Q. 6",
+      "cap": "33BKA1352",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33MAM31AA301",
+      "ten": "STEAM PACKING LEAK-OFF DRAIN VALVE",
+      "macb": "Q. 7",
+      "cap": "33BKA1353",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33MAA20AA201",
+      "ten": "HIGH PRESSURE TURBINE VVARMING VALVE",
+      "macb": "Q. 8",
+      "cap": "33BKA1354",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33MAA30AA201",
+      "ten": "1NTERMEDIATE PRESSURE ROTOR COOLING VALVE",
+      "macb": "Q. 9",
+      "cap": "33BKA1355",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33UMA01GH004",
+      "ten": "TURBINE BUILDING ROLLING DOOR 102-E",
+      "macb": "Q. 10",
+      "cap": "33BKA1356",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH047",
+      "thanhcai": "33BJC06GS230"
+    },
+    {
+      "kks": "33MKA01",
+      "ten": "GENERATOR COLLECTOR HOUSING 1NTERNAL LIGHTING",
+      "macb": "Q. 5",
+      "cap": "33BKA1361",
+      "vitri": "COS 8.0M GẦN DẦU BÔI TRƠN TUABIN",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33MKC01GH002",
+      "ten": "THYRISTOR RECTIFiER COOLING FAN (A)",
+      "macb": "Q. 1",
+      "cap": "33BKA1008",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33MKC01GH002",
+      "ten": "THYRISTOR RECTIFlER COOLING FAN (B)",
+      "macb": "Q. 2",
+      "cap": "33BKA1009",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33MKC01GH003",
+      "ten": "FlELD CIRCUIT BREAKER (FCB) CUBICLE (MISCELLANEOUS)",
+      "macb": "Q. 5",
+      "cap": "33BKA1011",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33MKC01GH002",
+      "ten": "THYRISTOR RECTIFlER CUBICLE (MISCELLANEOUS)",
+      "macb": "Q. 6",
+      "cap": "33BKA1012",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33MKC01GH001",
+      "ten": "NITIAL EXCITATION PANEL (MISCELLANEOUS)",
+      "macb": "Q. 7",
+      "cap": "33BKA1007",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33MKC01GT001",
+      "ten": "EXCITATION TRANSFORMER (MISCELLANEOUS)",
+      "macb": "Q. 8",
+      "cap": "33BKA1367",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33BAB11",
+      "ten": "NEUTRAL GROUNDING RESISTOR (NGR) CUBICLE (MISCELLANEOUS)",
+      "macb": "Q. 9",
+      "cap": "33BAB1000",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33MKA01",
+      "ten": "SPACE HEATER FOR GENERATOR COLLECTOR HOUSING \n(VIA FlELD CIRCUIT BREAKER (FCB) )",
+      "macb": "Q. 10",
+      "cap": "33BKA1010",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33CFQ05GH001",
+      "ten": "DH3TO DH3E TI E TARIFF METERING PANEL AUXILIARY POWER",
+      "macb": "Q. 11",
+      "cap": "33BKA1470",
+      "vitri": "COS 8.0M GẦN GCB",
+      "tu": "33BKA00GH048",
+      "thanhcai": "33BJC03GS200"
+    },
+    {
+      "kks": "33LAB41AA201",
+      "ten": "HIGH PRESSURE HEATER 3 BYPASS VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1370",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH050",
+      "thanhcai": "33BJC07GS100"
+    },
+    {
+      "kks": "33LAB50AA201",
+      "ten": "HIGH PRESSURE HEATER 3 OUTLET VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1371",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH050",
+      "thanhcai": "33BJC07GS100"
+    },
+    {
+      "kks": "33LBH20AA201",
+      "ten": "WATER COLLECTING TANKTO CONDENSER LOW LEVEL ISOLATION\n MOTOR-OPERATED VALVE",
+      "macb": "Q. 6",
+      "cap": "33BKA1375",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH050",
+      "thanhcai": "33BJC07GS100"
+    },
+    {
+      "kks": "33LBH20AA202",
+      "ten": "WATER COLLECTING TANKTO CONDENSER HIGH LEVEL ISOLATION \nMOTOR-OPERATED VALVE",
+      "macb": "Q. 7",
+      "cap": "33BKA1376",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH050",
+      "thanhcai": "33BJC07GS100"
+    },
+    {
+      "kks": "33LAB41AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 3 BYPASS VALVE",
+      "macb": "Q. 10",
+      "cap": "33BKA1627",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH050",
+      "thanhcai": "33BJC07GS100"
+    },
+    {
+      "kks": "33LAB50AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 3 OUTLET VALVE",
+      "macb": "Q. 11",
+      "cap": "33BKA1628",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH050",
+      "thanhcai": "33BJC07GS100"
+    },
+    {
+      "kks": "33LBH20AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF WATER COLLECTING TANKTO \nCONDENSER LOW LEVEL ISOLATION MOTOR-OPERATED VALVE",
+      "macb": "Q. 12",
+      "cap": "33BKA1629",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH050",
+      "thanhcai": "33BJC07GS100"
+    },
+    {
+      "kks": "33LBH20AA202-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF WATER COLLECTING TANKTO\n CONDENSER HIGH LEVEL ISOLATION MOTOR-OPERATED VALVE",
+      "macb": "Q. 13",
+      "cap": "33BKA1630",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH050",
+      "thanhcai": "33BJC07GS100"
+    },
+    {
+      "kks": "33LBQ10AA201",
+      "ten": "HIGH PRESSURE HEATER 1 GATE VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1379",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 3",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33LBQ30AA201",
+      "ten": "HIGH PRESSURE HEATER 3 GATE VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1380",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 4",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33LBS40AA201",
+      "ten": "NTERMEDIATE PRESSURE EXTRACTION 4 ISOLATION VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1381",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 5",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33LBS50AA201",
+      "ten": "LOW PRESSURE EXTRACTION TO LOW PRESSURE HEATER 5 MOTOR-OPERATED \nBLOCK VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1382",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 6",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33LBS60AA201",
+      "ten": "LOW PRESSURE EXTRACTION TO LOW PRESSURE HEATER \n6 MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1383",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 7",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33HAN10AA201",
+      "ten": "WATER COLLECTING TANKTO BLOWDOWN TANK HIGH LEVEL \nMOTOR-OPERATED VALVE",
+      "macb": "Q. 6",
+      "cap": "33BKA1384",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 8",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33HAN10AA202",
+      "ten": "WATER COLLECTING TANKTO BLOWDOWN TANK LOW LEVEL \nMOTOR-OPERATED VALVE",
+      "macb": "Q. 7",
+      "cap": "33BKA1385",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 9",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33LBQ10AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 1 GATE VALVE",
+      "macb": "Q. 8",
+      "cap": "33BKA1631",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 10",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33UMA01GH005",
+      "ten": "TURBINE BUILDING ROLLING DOOR 102-H",
+      "macb": "Q. 9",
+      "cap": "33BKA1387",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 11",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33LBQ30AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 3GATE VALVE",
+      "macb": "Q. 10",
+      "cap": "33BKA1632",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 12",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33HAN10AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF WATER COLLECTING TANKTO \nBLOWDOWN TANK HIGH LEVEL MOTOR-OPERATED VALVE",
+      "macb": "Q. 11",
+      "cap": "33BKA1633",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 13",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33HAN10AA202-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF WATER COLLECTING TANKTO \nBLOWDOWN TANK LOW LEVEL MOTOR-OPERATED VALVE",
+      "macb": "Q. 12",
+      "cap": "33BKA1634",
+      "vitri": "COS 8.0M GẦN GIA NHIỆT SỐ 14",
+      "tu": "33BKA00GH051",
+      "thanhcai": "BJC07GS200"
+    },
+    {
+      "kks": "33LCA40AA202",
+      "ten": "CONDENSER TO HEATER 7 & 8 ISOLATION MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1388",
+      "vitri": "COS 8.0M GẦN CHÂN KHÔNG HỘP NƯỚC",
+      "tu": "33BKA00GH052",
+      "thanhcai": "33BJC06GS130"
+    },
+    {
+      "kks": "33LCA43AA201",
+      "ten": "CONDENSATE WATER CONTROL STATION BYPASS VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1389",
+      "vitri": "COS 8.0M GẦN CHÂN KHÔNG HỘP NƯỚC",
+      "tu": "33BKA00GH052",
+      "thanhcai": "33BJC06GS130"
+    },
+    {
+      "kks": "33LCA44AA201",
+      "ten": "CONDENSER TO HEATER 7 & 8 BYPASS ISOLATION MOTOR-OPERATED \nBLOCK VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1390",
+      "vitri": "COS 8.0M GẦN CHÂN KHÔNG HỘP NƯỚC",
+      "tu": "33BKA00GH052",
+      "thanhcai": "33BJC06GS130"
+    },
+    {
+      "kks": "33LCA50AA201",
+      "ten": "LOW PRESSURE HEATER 7 & 8 OUTLET ISOLATION MOTOR-OPERATED\n BLOCK VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1391",
+      "vitri": "COS 8.0M GẦN CHÂN KHÔNG HỘP NƯỚC",
+      "tu": "33BKA00GH052",
+      "thanhcai": "33BJC06GS130"
+    },
+    {
+      "kks": "33LCD40AA201",
+      "ten": "CLOSED CYCLE COOLING VVATER TANK MAKE UP WATER ISOLATION VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1392",
+      "vitri": "COS 8.0M GẦN CHÂN KHÔNG HỘP NƯỚC",
+      "tu": "33BKA00GH052",
+      "thanhcai": "33BJC06GS130"
+    },
+    {
+      "kks": "33LAB50AA202",
+      "ten": "HIGH PRESSURE HEATER 2 INLET VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1372",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH053",
+      "thanhcai": "33BJC05GS200"
+    },
+    {
+      "kks": "33LAB51AA201",
+      "ten": "HIGH PRESSURE HEATER 2 BYPASS VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1373",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH053",
+      "thanhcai": "33BJC05GS200"
+    },
+    {
+      "kks": "33LAB50AA202-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 2 INLET VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1635",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH053",
+      "thanhcai": "33BJC05GS200"
+    },
+    {
+      "kks": "33LAB51AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 2 BYPASS VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1636",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH053",
+      "thanhcai": "33BJC05GS200"
+    },
+    {
+      "kks": "33LBH20AA203",
+      "ten": "WATER COLLECTING TANKTO CONDENSER LOW LEVEL STOP\n MOTOR-OPERATED VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1637",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH053",
+      "thanhcai": "33BJC05GS200"
+    },
+    {
+      "kks": "33LBH20AA204",
+      "ten": "WATER COLLECTING TANKTO CONDENSER HIGH LEVEL STOP \nMOTOR-OPERATED VALVE",
+      "macb": "Q. 6",
+      "cap": "33BKA1378",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH053",
+      "thanhcai": "33BJC05GS200"
+    },
+    {
+      "kks": "33LBH20AA203-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF WATER COLLECTING TANK TO \nCONDENSER LOW LEVELSTOP MOTOR-OPERATED VALVE",
+      "macb": "Q. 7",
+      "cap": "33BKA1638",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH053",
+      "thanhcai": "33BJC05GS200"
+    },
+    {
+      "kks": "33LBH20AA204-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF WATER COLLECTING TANK TO \nCONDENSER HIGH LEVELSTOP MOTOR-OPERATED VALVE",
+      "macb": "Q. 8",
+      "cap": "33BKA1639",
+      "vitri": "COS 8.0M GẦN BÌNH NGƯNG HƠI CHÈN",
+      "tu": "33BKA00GH053",
+      "thanhcai": "33BJC05GS200"
+    },
+    {
+      "kks": "33MAL01AA852",
+      "ten": "MAIN STOP VALVE (MSV) (A) BEFORE SEAT DRAIN VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1393",
+      "vitri": "COS 8.0M GẦN ĐƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH055",
+      "thanhcai": "BMB07GS100"
+    },
+    {
+      "kks": "33MAL02AA852",
+      "ten": "MAIN STOP VALVE (MSV) (B) BEFORE SEAT DRAIN VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1394",
+      "vitri": "COS 8.0M GẦN ĐƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH055",
+      "thanhcai": "BMB07GS100"
+    },
+    {
+      "kks": "33MAL03AA852",
+      "ten": "MAI N STOP VALVE (MSV) (C) BEFORE SEAT DRAIN VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1395",
+      "vitri": "COS 8.0M GẦN ĐƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH055",
+      "thanhcai": "BMB07GS100"
+    },
+    {
+      "kks": "33MAL04AA852",
+      "ten": "MAI N STOP VALVE (MSV) (D) BEFORE SEAT DRAIN VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1396",
+      "vitri": "COS 8.0M GẦN ĐƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH055",
+      "thanhcai": "BMB07GS100"
+    },
+    {
+      "kks": "33MAG01AA201",
+      "ten": "VACUUM BREAKER VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1397",
+      "vitri": "COS 8.0M GẦN ĐƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH055",
+      "thanhcai": "BMB07GS100"
+    },
+    {
+      "kks": "33MAF23AA503",
+      "ten": "TURBINE LU BE OILTO EMERGENCY OILTANK ISOLATION VALVE",
+      "macb": "Q. 6",
+      "cap": "33BKA1398",
+      "vitri": "COS 8.0M GẦN ĐƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH055",
+      "thanhcai": "BMB07GS100"
+    },
+    {
+      "kks": "33LBG01AA211",
+      "ten": "FROM DH3 MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 7",
+      "cap": "33BKA1399",
+      "vitri": "COS 8.0M GẦN ĐƯỜNG HƠI MỚI",
+      "tu": "33BKA00GH055",
+      "thanhcai": "BMB07GS100"
+    },
+    {
+      "kks": "33LAB11AA201",
+      "ten": "BOOSTER PUMP A INLET ISOLATION VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1400",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG VÀO MÁY PHÁT",
+      "tu": "33BKA00GH061",
+      "thanhcai": "33BJC07GS500"
+    },
+    {
+      "kks": "33LAB21AA201",
+      "ten": "BOOSTER PUMP B INLET ISOLATION VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1401",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG VÀO MÁY PHÁT",
+      "tu": "33BKA00GH061",
+      "thanhcai": "33BJC07GS500"
+    },
+    {
+      "kks": "33LAB31AA201",
+      "ten": "BOOSTER PUMPCINLET ISOLATION VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1402",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG VÀO MÁY PHÁT",
+      "tu": "33BKA00GH061",
+      "thanhcai": "33BJC07GS500"
+    },
+    {
+      "kks": "33LAB60AA201",
+      "ten": "HIGH PRESSURE HEATER 2 OUTLET VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1403",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG VÀO MÁY PHÁT",
+      "tu": "33BKA00GH061",
+      "thanhcai": "33BJC07GS500"
+    },
+    {
+      "kks": "33LAB60AA202",
+      "ten": "HIGH PRESSURE HEATER 1 INLET VAVEL",
+      "macb": "Q. 5",
+      "cap": "33BKA1404",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG VÀO MÁY PHÁT",
+      "tu": "33BKA00GH061",
+      "thanhcai": "33BJC07GS500"
+    },
+    {
+      "kks": "33LBQ20AA201",
+      "ten": "HIGH PRESSURE HEATER 2 GATE VALVE",
+      "macb": "Q. 8",
+      "cap": "33BKA1407",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG VÀO MÁY PHÁT",
+      "tu": "33BKA00GH061",
+      "thanhcai": "33BJC07GS500"
+    },
+    {
+      "kks": "33LAB60AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 2 OUTLET VALVE",
+      "macb": "Q. 9",
+      "cap": "33BKA1640",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG VÀO MÁY PHÁT",
+      "tu": "33BKA00GH061",
+      "thanhcai": "33BJC07GS500"
+    },
+    {
+      "kks": "33LAB60AA202-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 1 INLET VAVEL",
+      "macb": "Q. 10",
+      "cap": "33BKA1641",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG VÀO MÁY PHÁT",
+      "tu": "33BKA00GH061",
+      "thanhcai": "33BJC07GS500"
+    },
+    {
+      "kks": "33LBQ20AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 2 GATE VALVE",
+      "macb": "Q. 11",
+      "cap": "33BKA1642",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG VÀO MÁY PHÁT",
+      "tu": "33BKA00GH061",
+      "thanhcai": "33BJC07GS500"
+    },
+    {
+      "kks": "33LBG23AA201",
+      "ten": "STEAM COIL AIR HEATER MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1408",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LBG02AA211",
+      "ten": "FROM 4# EXTRACTION MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1409",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LBG03AA201",
+      "ten": "FROM COLD REHEAT MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 3",
+      "cap": "33BKA1410",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LBG04AA201",
+      "ten": "TO COAL MILL B DRAIN VALVE",
+      "macb": "Q. 4",
+      "cap": "33BKA1411",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LCA60AA202",
+      "ten": "LOW PRESSURE HEATER 5 INLET ISOLATIOIN MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 5",
+      "cap": "33BKA1412",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LCA61AA201",
+      "ten": "LOW PRESSURE HEATER 5 BYPASS ISOLATION MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 6",
+      "cap": "33BKA1413",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LCA70AA201",
+      "ten": "LOW PRESSURE HEATER 5 OUTLET ISOLATIOIN MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 7",
+      "cap": "33BKA1414",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LBG03AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF FROM COLD REHEAT\n MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 8",
+      "cap": "33BKA1643",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LAB61AA201",
+      "ten": "HIGH PRESSURE HEATER 1 BYPASS VALVE",
+      "macb": "Q. 9",
+      "cap": "33BKA1405",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LAB70AA201",
+      "ten": "HIGH PRESSURE HEATER 1 OUTLET VALVE",
+      "macb": "Q. 10",
+      "cap": "33BKA1406",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LAB61AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 1 BYPASS VALVE",
+      "macb": "Q. 11",
+      "cap": "33BKA1644",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LAB70AA201-A",
+      "ten": "BYPASS MOTOR-OPERATED VALVE OF HIGH PRESSURE HEATER 10UTLET VALVE",
+      "macb": "Q. 12",
+      "cap": "33BKA1645",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33CQB01GH002",
+      "ten": "HAND DRYER",
+      "macb": "Q. 16",
+      "cap": "33BKA1419",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33CQB01GH003",
+      "ten": "URINAL (SENSOR FLUSH VALVE)",
+      "macb": "Q. 17",
+      "cap": "33BKA1420",
+      "vitri": "COS 15.5M GẦN ĐƯỜNG ĐI QUA MÁY \nCẤP THAN",
+      "tu": "33BKA00GH062",
+      "thanhcai": "33BJC07GS600"
+    },
+    {
+      "kks": "33LCA82AA201",
+      "ten": "DEAERATOR OUTLET ISOLATION MOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 1",
+      "cap": "33BKA1415",
+      "vitri": "COS 25.5M GẦN BÌNH KHỬ KHÍ",
+      "tu": "33BKA00GH065",
+      "thanhcai": "33BJC06GS810"
+    },
+    {
+      "kks": "33LBS40AA202",
+      "ten": "INTERMEDIATE PRESSURE EXTRACTION TO DEAERATOR \nMOTOR-OPERATED BLOCK VALVE",
+      "macb": "Q. 2",
+      "cap": "33BKA1416",
+      "vitri": "COS 25.5M GẦN BÌNH KHỬ KHÍ",
+      "tu": "33BKA00GH065",
+      "thanhcai": "33BJC06GS810"
+    },
+    {
+      "kks": "33LCK40AA201",
+      "ten": "DEAERATOR STARTUP VENT ELECTRIC GLOBE VALVE 1",
+      "macb": "Q. 3",
+      "cap": "33BKA1471",
+      "vitri": "COS 25.5M GẦN BÌNH KHỬ KHÍ",
+      "tu": "33BKA00GH065",
+      "thanhcai": "33BJC06GS810"
+    },
+    {
+      "kks": "33LCK40AA202",
+      "ten": "DEAERATOR STARTUP VENT ELECTRIC GLOBE VALVE 2",
+      "macb": "Q. 4",
+      "cap": "33BKA1472",
+      "vitri": "COS 25.5M GẦN BÌNH KHỬ KHÍ",
+      "tu": "33BKA00GH065",
+      "thanhcai": "33BJC06GS810"
+    },
+    {
+      "kks": "33LCK40AA203",
+      "ten": "DEAERATOR OPERATION VENT ELECTRIC GLOBE VALVE 1",
+      "macb": "Q. 5",
+      "cap": "33BKA1473",
+      "vitri": "COS 25.5M GẦN BÌNH KHỬ KHÍ",
+      "tu": "33BKA00GH065",
+      "thanhcai": "33BJC06GS810"
+    },
+    {
+      "kks": "33LCK40AA204",
+      "ten": "DEAERATOR OPERATION VENT ELECTRIC GLOBE VALVE 2",
+      "macb": "Q. 6",
+      "cap": "33BKA1474",
+      "vitri": "COS 25.5M GẦN BÌNH KHỬ KHÍ",
+      "tu": "33BKA00GH065",
+      "thanhcai": "33BJC06GS810"
+    },
+    {
+      "kks": "33LCH32AA201",
+      "ten": "HIGH PRESSURE HEATER 3 NORMAL DRAIN CONTROL VALVE ISOLATION VALVE",
+      "macb": "Q. 7",
+      "cap": "33BKA1475",
+      "vitri": "COS 25.5M GẦN BÌNH KHỬ KHÍ",
+      "tu": "33BKA00GH065",
+      "thanhcai": "33BJC06GS810"
+    }
+  ],
+  "ecb": [
+    {
+      "kks": "39SAC10AN908",
+      "ten": "0.0M BATTERY ROOM NO.4.5 EXPLODE-PROFF AXIAL FAN 1",
+      "macb": "Q1",
+      "cap": "33BKA1501",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AN909",
+      "ten": "0.0M BATTERY ROOM NO.4.5 EXPLODE-PROFF AXIAL FAN 2",
+      "macb": "Q2",
+      "cap": "33BKA1502",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AN930",
+      "ten": "0.0M BATTERY ROOM NO.4.5 EXPLODE-PROFF AXIAL FAN 3",
+      "macb": "Q3",
+      "cap": "33BKA1503",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AN931",
+      "ten": "0.0M BATTERY ROOM NO.4.5 EXPLODE-PROFF AXIAL FAN 4",
+      "macb": "Q4",
+      "cap": "33BKA1504",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AN932",
+      "ten": "0.0M BATTERY ROOM NO.4.5 EXPLODE-PROFF AXIAL FAN 5",
+      "macb": "Q5",
+      "cap": "33BKA1505",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AN933",
+      "ten": "0.0M BATTERY ROOM NO.4.5 EXPLODE-PROFF AXIAL FAN 6",
+      "macb": "Q6",
+      "cap": "33BKA1506",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH901",
+      "ten": "0.0M DISTRIBUTION ROOM AIR - COOLED CASSETTE TYPE AIR CONDITIONER 1",
+      "macb": "Q1",
+      "cap": "33BKA1521",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH902",
+      "ten": "0.0M DISTRIBUTION ROOM AIR - COOLED CASSETTE TYPE AIR CONDITIONER 2",
+      "macb": "Q2",
+      "cap": "33BKA1522",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH903",
+      "ten": "0.0M DISTRIBUTION ROOM AIR - COOLED CASSETTE TYPE AIR CONDITIONER 3",
+      "macb": "Q3",
+      "cap": "33BKA1523",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH904",
+      "ten": "0.0M DISTRIBUTION ROOM AIR - COOLED CASSETTE TYPE AIR CONDITIONER 4",
+      "macb": "Q4",
+      "cap": "33BKA1524",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH905",
+      "ten": "0.0M DISTRIBUTION ROOM AIR - COOLED CASSETTE TYPE AIR CONDITIONER 5",
+      "macb": "Q5",
+      "cap": "33BKA1525",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH906",
+      "ten": "0.0M DISTRIBUTION ROOM AIR - COOLED CASSETTE TYPE AIR CONDITIONER 6",
+      "macb": "Q6",
+      "cap": "33BKA1526",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH907",
+      "ten": "0.0M DISTRIBUTION ROOM AIR - COOLED CASSETTE TYPE AIR CONDITIONER 7",
+      "macb": "Q7",
+      "cap": "33BKA1527",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH908",
+      "ten": "0.0M DISTRIBUTION ROOM AIR - COOLED CASSETTE TYPE AIR CONDITIONER 8",
+      "macb": "Q8",
+      "cap": "33BKA1528",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH909",
+      "ten": "0.0M DISTRIBUTION ROOM AIR - COOLED CASSETTE TYPE AIR CONDITIONER 9",
+      "macb": "Q9",
+      "cap": "33BKA1529",
+      "vitri": "COS 0M PHÒNG KẾ BOILER",
+      "tu": "33BKA00GH81",
+      "thanhcai": "33BJN04GS710"
+    },
+    {
+      "kks": "39SAC10AH916",
+      "ten": "0.0M BATTERY ROOM AIR-COOLED FRESH AIR CONDITIONER 1",
+      "macb": "Q1",
+      "cap": "33BKA1541",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH83",
+      "thanhcai": "33BJN02GS100"
+    },
+    {
+      "kks": "39SAC10AH917",
+      "ten": "0.0M BATTERY ROOM AIR-COOLED FRESH AIR CONDITIONER 2",
+      "macb": "Q2",
+      "cap": "33BKA1542",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH83",
+      "thanhcai": "33BJN02GS100"
+    },
+    {
+      "kks": "39SAC10AH918",
+      "ten": "0.0M BATTERY ROOM AIR-COOLED FRESH AIR CONDITIONER 3",
+      "macb": "Q3",
+      "cap": "33BKA1543",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH83",
+      "thanhcai": "33BJN02GS100"
+    },
+    {
+      "kks": "39SAC10AH940",
+      "ten": "0.0M BATTERY ROOM AIR-COOLED FRESH AIR CONDITIONER 4",
+      "macb": "Q4",
+      "cap": "33BKA1544",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH83",
+      "thanhcai": "33BJN02GS100"
+    },
+    {
+      "kks": "39SAC10AH941",
+      "ten": "0.0M BATTERY ROOM AIR-COOLED FRESH AIR CONDITIONER 5",
+      "macb": "Q5",
+      "cap": "33BKA1545",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH83",
+      "thanhcai": "33BJN02GS100"
+    },
+    {
+      "kks": "39SAC10AH942",
+      "ten": "0.0M BATTERY ROOM AIR-COOLED FRESH AIR CONDITIONER 6",
+      "macb": "Q6",
+      "cap": "33BKA1546",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH83",
+      "thanhcai": "33BJN02GS100"
+    },
+    {
+      "kks": "39SAC10AH943",
+      "ten": "0.0M BATTERY ROOM AIR-COOLED FRESH AIR CONDITIONER 7",
+      "macb": "Q7",
+      "cap": "33BKA1547",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH83",
+      "thanhcai": "33BJN02GS100"
+    },
+    {
+      "kks": "39SAC10AH944",
+      "ten": "0.0M BATTERY ROOM AIR-COOLED FRESH AIR CONDITIONER 8",
+      "macb": "Q8",
+      "cap": "33BKA1548",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH83",
+      "thanhcai": "33BJN02GS100"
+    },
+    {
+      "kks": "39SAC20AN915",
+      "ten": "5.2M CABLE MEZZANINE NO.4 AXIAL FAN 1",
+      "macb": "Q1",
+      "cap": "33BKA1561",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH84",
+      "thanhcai": "33BJN04GS730"
+    },
+    {
+      "kks": "39SAC20AN916",
+      "ten": "5.2M CABLE MEZZANINE NO.4 AXIAL FAN 2",
+      "macb": "Q2",
+      "cap": "33BKA1562",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH84",
+      "thanhcai": "33BJN04GS730"
+    },
+    {
+      "kks": "39SAC20AN917",
+      "ten": "5.2M CABLE MEZZANINE NO.4 AXIAL FAN 3",
+      "macb": "Q3",
+      "cap": "33BKA1563",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH84",
+      "thanhcai": "33BJN04GS730"
+    },
+    {
+      "kks": "39SAC10AH910",
+      "ten": "9.1M ELECTRICAL PROTECT PANEL ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 1",
+      "macb": "Q1",
+      "cap": "33BKA1581",
+      "vitri": "PHÒNG CÁP 5.2M",
+      "tu": "33BKA00GH85",
+      "thanhcai": "33BJN04GS300"
+    },
+    {
+      "kks": "39SAC10AH911",
+      "ten": "9.1M ELECTRICAL PROTECT PANEL ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 2",
+      "macb": "Q2",
+      "cap": "33BKA1582",
+      "vitri": "PHÒNG CÁP 5.2M",
+      "tu": "33BKA00GH85",
+      "thanhcai": "33BJN04GS300"
+    },
+    {
+      "kks": "39SAC10AH912",
+      "ten": "9.1M ELECTRICAL PROTECT PANEL ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 3",
+      "macb": "Q3",
+      "cap": "33BKA1583",
+      "vitri": "PHÒNG CÁP 5.2M",
+      "tu": "33BKA00GH85",
+      "thanhcai": "33BJN04GS300"
+    },
+    {
+      "kks": "39SAC10AH913",
+      "ten": "9.1M ELECTRICAL PROTECT PANEL ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 4",
+      "macb": "Q4",
+      "cap": "33BKA1584",
+      "vitri": "PHÒNG CÁP 5.2M",
+      "tu": "33BKA00GH85",
+      "thanhcai": "33BJN04GS300"
+    },
+    {
+      "kks": "39SAC10AH914",
+      "ten": "9.1M ELECTRICAL PROTECT PANEL ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 5",
+      "macb": "Q5",
+      "cap": "33BKA1585",
+      "vitri": "PHÒNG CÁP 5.2M",
+      "tu": "33BKA00GH85",
+      "thanhcai": "33BJN04GS300"
+    },
+    {
+      "kks": "39SAC10AH915",
+      "ten": "9.1M ELECTRICAL PROTECT PANEL ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 6",
+      "macb": "Q6",
+      "cap": "33BKA1586",
+      "vitri": "PHÒNG CÁP 5.2M",
+      "tu": "33BKA00GH85",
+      "thanhcai": "33BJN04GS300"
+    },
+    {
+      "kks": "39SAC10AH925",
+      "ten": "9.1M COMMUNICATION ROOM AIR -COOLING CASSETTE TYPE AIR CONDITIONER 1",
+      "macb": "Q7",
+      "cap": "33BKA1587",
+      "vitri": "PHÒNG CÁP 5.2M",
+      "tu": "33BKA00GH85",
+      "thanhcai": "33BJN04GS300"
+    },
+    {
+      "kks": "39SAC10AH926",
+      "ten": "9.1M COMMUNICATION ROOM AIR -COOLING CASSETTE TYPE AIR CONDITIONER 2",
+      "macb": "Q8",
+      "cap": "33BKA1588",
+      "vitri": "PHÒNG CÁP 5.2M",
+      "tu": "33BKA00GH85",
+      "thanhcai": "33BJN04GS300"
+    },
+    {
+      "kks": "39SAC10AH927",
+      "ten": "9.1M COMMUNICATION ROOM AIR -COOLING CASSETTE TYPE AIR CONDITIONER 3",
+      "macb": "Q9",
+      "cap": "33BKA1589",
+      "vitri": "PHÒNG CÁP 5.2M",
+      "tu": "33BKA00GH85",
+      "thanhcai": "33BJN04GS300"
+    },
+    {
+      "kks": "39SAC10AH919",
+      "ten": "9.1M UPS PANEL AND  BOILER MCC ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 1",
+      "macb": "Q1",
+      "cap": "33BKA1601",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH86",
+      "thanhcai": "33BJN03GS300"
+    },
+    {
+      "kks": "39SAC10AH920",
+      "ten": "9.1M UPS PANEL AND  BOILER MCC ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 2",
+      "macb": "Q2",
+      "cap": "33BKA1602",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH86",
+      "thanhcai": "33BJN03GS300"
+    },
+    {
+      "kks": "39SAC10AH921",
+      "ten": "9.1M UPS PANEL AND  BOILER MCC ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 3",
+      "macb": "Q3",
+      "cap": "33BKA1603",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH86",
+      "thanhcai": "33BJN03GS300"
+    },
+    {
+      "kks": "39SAC10AH922",
+      "ten": "9.1M UPS PANEL AND  BOILER MCC ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 4",
+      "macb": "Q4",
+      "cap": "33BKA1604",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH86",
+      "thanhcai": "33BJN03GS300"
+    },
+    {
+      "kks": "39SAC10AH923",
+      "ten": "9.1M UPS PANEL AND  BOILER MCC ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 5",
+      "macb": "Q5",
+      "cap": "33BKA1605",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH86",
+      "thanhcai": "33BJN03GS300"
+    },
+    {
+      "kks": "39SAC10AH924",
+      "ten": "9.1M UPS PANEL AND  BOILER MCC ROOM AIR-COOLING CASSETTE TYPE AIR CONDITIONER 6",
+      "macb": "Q6",
+      "cap": "33BKA1606",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH86",
+      "thanhcai": "33BJN03GS300"
+    },
+    {
+      "kks": "39SAC10AH928",
+      "ten": "9.1M COMMUNICATION BATTERY ROOM AIR-COOLING CASSTTE TYPE AIR CONDITIONER 1",
+      "macb": "Q7",
+      "cap": "33BKA1607",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH86",
+      "thanhcai": "33BJN03GS300"
+    },
+    {
+      "kks": "39SAC10AH929",
+      "ten": "9.1M COMMUNICATION BATTERY ROOM AIR-COOLING CASSTTE TYPE AIR CONDITIONER 2",
+      "macb": "Q8",
+      "cap": "33BKA1608",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH86",
+      "thanhcai": "33BJN03GS300"
+    },
+    {
+      "kks": "39SAC10AH930",
+      "ten": "9.1M COMMUNICATION BATTERY ROOM AIR-COOLING CASSTTE TYPE AIR CONDITIONER 3",
+      "macb": "Q9",
+      "cap": "33BKA1609",
+      "vitri": "COS 0M PHÒNG BOILER",
+      "tu": "33BKA00GH86",
+      "thanhcai": "33BJN03GS300"
+    },
+    {
+      "kks": "39SAC20AH904",
+      "ten": "13.2M CABLE MEZZANINE NO.4 AXIAL FAN 1",
+      "macb": "Q1",
+      "cap": "33BKA1621",
+      "vitri": "PHÒNG BẢO VỆ 9.1M",
+      "tu": "33BKA00GH87",
+      "thanhcai": "33BJN05GS510"
+    },
+    {
+      "kks": "39SAC20AH905",
+      "ten": "13.2M CABLE MEZZANINE NO.4 AXIAL FAN 2",
+      "macb": "Q2",
+      "cap": "33BKA1622",
+      "vitri": "PHÒNG BẢO VỆ 9.1M",
+      "tu": "33BKA00GH87",
+      "thanhcai": "33BJN05GS510"
+    }
+  ]
+}
