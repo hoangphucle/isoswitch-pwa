@@ -28,7 +28,7 @@
       "thanhcai": "33BJK05\nGS710"
     },
     {
-      "kks": "33H LA63AA201",
+      "kks": "33HLA63AA201",
       "ten": "AI R H EATER OUTLET PRIMARY AI R DAMPER",
       "macb": "Q1",
       "cap": "33BKA1165",
@@ -37,7 +37,7 @@
       "thanhcai": "33BJR04\nGS630"
     },
     {
-      "kks": "33H LA34AA201",
+      "kks": "33HLA34AA201",
       "ten": "SECONDARY AIR AIRHEATER OUT DAMPER",
       "macb": "Q2",
       "cap": "33BKA1142",
@@ -46,7 +46,7 @@
       "thanhcai": "33BJR04\nGS630"
     },
     {
-      "kks": "33H LA41AA201",
+      "kks": "33HLA41AA201",
       "ten": "SECONDARY AI R BYPASS DAMPER",
       "macb": "Q3",
       "cap": "33BKA1143",
@@ -55,7 +55,7 @@
       "thanhcai": "33BJR04\nGS630"
     },
     {
-      "kks": "33H LA70AA202",
+      "kks": "33HLA70AA202",
       "ten": "COLD PRIMARY AI R CROSSOVER DAMPER",
       "macb": "Q4",
       "cap": "33BKA1166",
@@ -163,7 +163,7 @@
       "thanhcai": "33BJR05\nGS800"
     },
     {
-      "kks": "33H LA31AA201",
+      "kks": "33HLA31AA201",
       "ten": "FORCED DRAFT FAN B INLET DAMPER",
       "macb": "Q3",
       "cap": "33BKA1455",
@@ -172,7 +172,7 @@
       "thanhcai": "33BJR05\nGS800"
     },
     {
-      "kks": "33H LA32AA201",
+      "kks": "33HLA32AA201",
       "ten": "FORCED DRAFT FAN B OUTLET DAMPER",
       "macb": "Q4",
       "cap": "33BKA1456",
@@ -181,7 +181,7 @@
       "thanhcai": "33BJR05\nGS800"
     },
     {
-      "kks": "33H LA62AA201",
+      "kks": "33HLA62AA201",
       "ten": "PRIMARY AI R FAN B OUTLET DAMPER",
       "macb": "Q5",
       "cap": "33BKA1161",
@@ -199,7 +199,7 @@
       "thanhcai": "33BJR05\nGS800"
     },
     {
-      "kks": "33H LB61AS001",
+      "kks": "33HLB61AS001",
       "ten": "PRIMARY AI R FAN B ACTUATOR",
       "macb": "Q7",
       "cap": "33BKA1458",
@@ -703,7 +703,7 @@
       "thanhcai": "33BJD06GS410"
     },
     {
-      "kks": "33H LD01AC121",
+      "kks": "33HLD01AC121",
       "ten": "Al R HEATER A LEAKAGE CONTROL SYSTEM MOTOR 1",
       "macb": "Q5",
       "cap": "33BKA1085",
@@ -721,7 +721,7 @@
       "thanhcai": "33BJD06GS410"
     },
     {
-      "kks": "33H LD01AC123",
+      "kks": "33HLD01AC123",
       "ten": "Al R HEATER A LEAKAGE CONTROL SYSTEM MOTOR 3",
       "macb": "Q7",
       "cap": "33BKA1087",
@@ -802,7 +802,7 @@
       "thanhcai": "33BJE05GS410"
     },
     {
-      "kks": "33H LD02GH101",
+      "kks": "33HLD02GH101",
       "ten": "AIR HEATER B 1NSTRUMENT CONTROL PANEL",
       "macb": "Q4",
       "cap": "33BKA1434",
@@ -820,7 +820,7 @@
       "thanhcai": "33BJE05GS410"
     },
     {
-      "kks": "33H LD02AC122",
+      "kks": "33HLD02AC122",
       "ten": "AIR HEATER B LEAKAGE CONTROL SYSTEM MOTOR 2",
       "macb": "Q6",
       "cap": "33BKA1436",
@@ -1063,7 +1063,7 @@
       "thanhcai": "33BJD06GS230"
     },
     {
-      "kks": "33H LA73AA001",
+      "kks": "33HLA73AA001",
       "ten": "COLD PRIMARY AIR DAMPER",
       "macb": "Q2",
       "cap": "33BKA1162",
@@ -1072,7 +1072,7 @@
       "thanhcai": "33BJE05GS230"
     },
     {
-      "kks": "33H LA74AA001",
+      "kks": "33HLA74AA001",
       "ten": "COLD PRIMARY AIR DAMPER",
       "macb": "Q3",
       "cap": "33BKA1163",
@@ -1081,7 +1081,7 @@
       "thanhcai": "33BJE05GS230"
     },
     {
-      "kks": "33H LA75AA001",
+      "kks": "33HLA75AA001",
       "ten": "COLD PRIMARY AIR DAMPER",
       "macb": "Q4",
       "cap": "33BKA1164",
@@ -1099,7 +1099,7 @@
       "thanhcai": "33BJE05GS230"
     },
     {
-      "kks": "33H LA84AA001",
+      "kks": "33HLA84AA001",
       "ten": "HOT PRIMARY AIR DAMPER",
       "macb": "Q8",
       "cap": "33BKA1168",
@@ -1108,7 +1108,7 @@
       "thanhcai": "33BJE05GS230"
     },
     {
-      "kks": "33H LA85AA001",
+      "kks": "33HLA85AA001",
       "ten": "HOT PRIMARY AIR DAMPER",
       "macb": "Q9",
       "cap": "33BKA1169",
