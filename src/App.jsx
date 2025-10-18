@@ -45,13 +45,15 @@ export default function App() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.img
-            src="/icons/logo.png"
-            alt="IsoSwitch logo"
-            className="w-24 h-24 sm:w-28 sm:h-28 object-contain rounded-3xl shadow-[0_0_30px_rgba(0,122,255,0.3)]"
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          />
+  src="/icons/logo.png"
+  alt="IsoSwitch logo"
+  className="w-[80px] h-[80px] sm:w-[96px] sm:h-[96px] max-w-[100px] max-h-[100px] object-contain rounded-xl drop-shadow-[0_0_10px_rgba(0,122,255,0.4)]"
+  style={{ width: "80px", height: "80px" }}
+  initial={{ scale: 0.9, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+/>
+
           <h1 className="mt-4 text-3xl sm:text-4xl font-semibold tracking-tight text-white drop-shadow-lg">
             IsoSwitch
           </h1>
