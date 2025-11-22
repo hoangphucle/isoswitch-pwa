@@ -1,35 +1,54 @@
-﻿const CACHE_NAME = "isoswitch-cache-v1";
-const ASSETS = [
+﻿const CACHE_NAME = "isofind-cache-v1";
+const FILES_TO_CACHE = [
   "/",
   "/index.html",
+  "/logo-spark.svg",
+  "/devices.json",
+  "/C&I.json",
   "/manifest.json",
   "/src/main.jsx",
-  "/src/App.jsx",
-  "/src/styles.css",
-  "/src/data/devices.json"
+  "/src/components/Button.css",
+  // Thêm các file JS/CSS khác nếu cần
 ];
 
-self.addEventListener("install", (event) => {
-  self.skipWaiting();
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
+// Cài đặt cache khi install
+self.addEventListener("install", (evt) => {
+  evt.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => {
+      console.log("[ServiceWorker] Pre-caching offline files");
+      return cache.addAll(FILES_TO_CACHE);
+    })
   );
+  self.skipWaiting();
 });
 
-self.addEventListener("activate", (event) => {
-  event.waitUntil(self.clients.claim());
+// Kích hoạt service worker
+self.addEventListener("activate", (evt) => {
+  evt.waitUntil(
+    caches.keys().then((keyList) =>
+      Promise.all(
+        keyList.map((key) => {
+          if (key !== CACHE_NAME) {
+            console.log("[ServiceWorker] Removing old cache", key);
+            return caches.delete(key);
+          }
+        })
+      )
+    )
+  );
+  self.clients.claim();
 });
 
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request).then((cached) => {
-      return cached || fetch(event.request).then((res) => {
+// Intercept fetch requests
+self.addEventListener("fetch", (evt) => {
+  evt.respondWith(
+    caches.match(evt.request).then((resp) => {
+      return resp || fetch(evt.request).then((response) => {
+        // Cache các file mới
         return caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, res.clone());
-          return res;
+          cache.put(evt.request, response.clone());
+          return response;
         });
-      }).catch(() => {
-        // fallback could be added here
       });
     })
   );

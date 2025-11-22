@@ -1,33 +1,156 @@
-/* Button.css - iOS style ripple & scale */
+/* src/components/Button.css — UPDATED
+   - Added CSS variables for easy tuning
+   - Ensured children inherit border-radius
+   - Made CI buttons smaller by default via variables
+   - Kept ripple animation
+   - Mobile-friendly tweaks
+   - Remove debug !important usage
+*/
 
+:root {
+  /* tweak these values to change look globally */
+  --btn-radius: 45px;          /* border radius for main buttons */
+  --btn-max-width: 200px;      /* max width for mode buttons */
+  --btn-min-vw: 64vw;          /* relative width on small screens */
+
+  --ci-btn-max: 150px;   /* nhỏ hơn */
+  --ci-btn-vw: 40vw;
+  --ci-icon-size: 60px;      /* default CI icon size */
+
+  --icon-min: 44px;            /* mode icon min */
+  --icon-max: 72px;            /* mode icon max */
+
+  --bg-card: #2c2c2e;
+  --border: rgba(255,255,255,0.06);
+  --accent-a: #0a84ff;
+  --accent-b: #5ac8fa;
+  --text: #fff;
+}
+
+/* RIPPLE */
 .ripple {
   position: absolute;
   border-radius: 50%;
   transform: scale(0);
-  animation: ripple-animation 0.6s linear;
-  background-color: rgba(255, 255, 255, 0.4);
+  animation: ripple 600ms linear;
+  background: rgba(255,255,255,0.14);
   pointer-events: none;
-  z-index: 1;
+  will-change: transform, opacity;
+  mix-blend-mode: screen;
+}
+@keyframes ripple { to { transform: scale(2.5); opacity: 0; } }
+
+/* base button: square card look */
+.mode-btn {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  overflow: hidden; /* ensure children clipped to rounded corners */
+  width: min(var(--btn-min-vw), var(--btn-max-width));
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  transition: transform .14s ease, box-shadow .14s ease, background .16s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.mode-btn:hover { transform: translateY(-4px); box-shadow: 0 10px 26px rgba(0,0,0,0.32); }
+.mode-btn:active { transform: scale(.985); }
+.mode-btn:focus { outline: 3px solid rgba(10,132,255,0.12); outline-offset: 4px; box-shadow: 0 10px 30px rgba(10,132,255,0.08); }
+
+/* ensure children don't overflow and inherit radius */
+.mode-btn > *,
+.ci-btn > * {
+  border-radius: inherit;
 }
 
-@keyframes ripple-animation {
-  to {
-    transform: scale(4);
-    opacity: 0;
+/* inner layout (icon above, label below) */
+.mode-btn__inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* icon sizing: responsive with clamp */
+.mode-btn__icon {
+  display: block;
+  width: clamp(var(--icon-min), 20%, var(--icon-max));
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
+}
+.mode-btn__icon.big { width: clamp(56px, 26%, 88px); }
+
+/* label */
+.mode-btn__label {
+  font-size: clamp(14px, 2.2vw, 16px);
+  font-weight: 800;
+  text-align: center;
+  color: var(--text);
+  line-height: 1.05;
+}
+.mode-btn__label.big-text { font-size: clamp(15px, 2.6vw, 18px); }
+
+/* grid for main mode */
+.mode-grid { display: grid; gap: 18px; justify-content: center; grid-template-columns: 1fr; width: 100%; max-width: 980px; margin: 0 auto; padding: 6px; }
+@media (min-width: 540px) { .mode-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; } }
+@media (min-width: 980px) { .mode-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 22px; } }
+
+/* CI styles */
+.ci-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0,1fr)); justify-items: center; align-items: stretch; width: 100%; max-width: 980px; margin: 0 auto; padding: 6px; }
+@media (max-width: 720px) { .ci-grid { grid-template-columns: 1fr; gap: 14px; } }
+
+/* ci button tweaks (use vars for easy tweak) */
+.ci-btn {
+  width: min(var(--ci-btn-vw), var(--ci-btn-max));
+  aspect-ratio: 1 / 1;
+  border-radius: calc(var(--btn-radius) - 6px);
+  padding: 10px;
+}
+
+/* fallback circular icon */
+.ci-icon { width: 78px; height: 78px; border-radius: 50%; background: rgba(255,255,255,0.03); display:flex; align-items:center; justify-content:center; box-shadow: 0 8px 18px rgba(0,0,0,0.32); }
+.ci-letter { font-weight: 900; color: var(--text); font-size: 22px; letter-spacing: 0.6px; }
+
+/* icon size for CI buttons */
+.ci-btn .mode-btn__icon,
+.ci-icon-img { width: var(--ci-icon-size); height: var(--ci-icon-size); object-fit: contain; display: block; }
+.ci-btn .mode-btn__label { font-size: 14px; font-weight: 800; margin-top: 8px; color: var(--text); }
+
+/* active state */
+.mode-btn--active { background: linear-gradient(135deg, var(--accent-a), var(--accent-b)); border: none; box-shadow: 0 18px 44px rgba(10,132,255,0.16); transform: translateY(-2px); }
+.mode-btn--active .mode-btn__icon { filter: drop-shadow(0 10px 30px rgba(10,132,255,0.12)); }
+
+/* small-screen tweaks */
+@media (max-width: 420px) {
+  .ci-btn { 
+    width: min(var(--ci-btn-vw), var(--ci-btn-max));
+    border-radius: calc(var(--btn-radius) - 6px);
   }
 }
 
-/* Optional: thêm hiệu ứng hover nhẹ cho button */
-button:hover {
-  filter: brightness(1.1);
-}
 
-/* Focus outline none (iOS style) */
-button:focus {
-  outline: none;
-}
+/* utility */
+.mode-btn__label.uppercase { text-transform: uppercase; }
 
-/* Smooth transition for all buttons */
-button {
-  transition: all 0.2s ease-in-out;
+/* ensure children inherit radius (debug safe) */
+.mode-btn, .ci-btn { overflow: hidden; }
+.mode-btn > *, .ci-btn > * { border-radius: inherit; }
+.mode-btn, .ci-btn { border-radius: 35px ; overflow: hidden ; }
+.mode-btn > *, .ci-btn > * { border-radius: inherit; }
+/* FIX: đảm bảo CI dùng đúng kích thước biến */
+@media (max-width: 220px) {
+  .ci-btn { 
+    width: min(var(--ci-btn-vw), var(--ci-btn-max));
+    border-radius: calc(var(--btn-radius) - 6px);
+  }
 }
