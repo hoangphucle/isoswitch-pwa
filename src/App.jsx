@@ -119,6 +119,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [selectedDevice, setSelectedDevice] = useState(null);
   const [showAddModal, setShowAddModal] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [showLoginModal, setShowLoginModal] =
     useState(false);
 
@@ -149,7 +150,6 @@ export default function App() {
   });
 
 
-  let currentUser = null;
 
 
   if (typeof window !== "undefined") {
@@ -303,6 +303,30 @@ export default function App() {
       window.removeEventListener("online", onOnline);
       window.removeEventListener("offline", onOffline);
     };
+  }, []);
+
+  useEffect(() => {
+
+    try {
+
+      const user = JSON.parse(
+
+        localStorage.getItem("user") || "null"
+
+      );
+
+      if (user?.role === "admin") {
+
+        setIsAdmin(true);
+
+      }
+
+    } catch (err) {
+
+      console.error(err);
+
+    }
+
   }, []);
   useEffect(() => {
     const setVH = () => {
@@ -679,7 +703,7 @@ export default function App() {
 
               <SearchForm onSearch={(q) => handleSearch(q, "device")} />
 
-              {currentUser?.role === "admin" && (
+              {isAdmin && (
 
                 <button
                   onClick={handleAddDevice}
