@@ -44,22 +44,32 @@
 .mode-btn {
   position: relative;
   display: block;
-  padding: 0;
+
   border: 1px solid var(--border);
   background: var(--bg-card);
   border-radius: var(--btn-radius);
+
   cursor: pointer;
-  overflow: hidden; /* ensure children clipped to rounded corners */
-  width: min(var(--btn-min-vw), var(--btn-max-width));
+  overflow: hidden;
+
+  /* ❗ FIX QUAN TRỌNG */
+  width: 100%;          /* thay vì min(...) */
+  max-width: 220px;     /* giới hạn để không phình */
+
   aspect-ratio: 1 / 1;
   margin: 0 auto;
+
   transition: transform .14s ease, box-shadow .14s ease, background .16s ease;
   box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+
   -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
 .mode-btn:hover { transform: translateY(-4px); box-shadow: 0 10px 26px rgba(0,0,0,0.32); }
-.mode-btn:active { transform: scale(.985); }
+.mode-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
 .mode-btn:focus { outline: 3px solid rgba(10,132,255,0.12); outline-offset: 4px; box-shadow: 0 10px 30px rgba(10,132,255,0.08); }
 
 /* ensure children don't overflow and inherit radius */
@@ -101,9 +111,13 @@
 .mode-btn__label.big-text { font-size: clamp(15px, 2.6vw, 18px); }
 
 /* grid for main mode */
-.mode-grid { display: grid; gap: 18px; justify-content: center; grid-template-columns: 1fr; width: 100%; max-width: 980px; margin: 0 auto; padding: 6px; }
-@media (min-width: 540px) { .mode-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; } }
-@media (min-width: 980px) { .mode-grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 22px; } }
+.mode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 14px;
+  max-width: 480px;
+  margin: 0 auto;
+}
 
 /* CI styles */
 .ci-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0,1fr)); justify-items: center; align-items: stretch; width: 100%; max-width: 980px; margin: 0 auto; padding: 6px; }

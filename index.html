@@ -1,24 +1,35 @@
 ﻿<!doctype html>
-<html>
+<html lang="vi">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <title>IsoFind</title>
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#1c1c1e">
 
-    <!-- iOS PWA -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="IsoFind">
-    <link rel="apple-touch-icon" href="/icons/icon-192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-120.png">
-    <!-- Android: prefer maskable icon -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#1c1c1e">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- VIEWPORT (QUAN TRỌNG NHẤT CHO SAFE AREA) -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <title>IsoFind</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#1c1c1e" />
+
+    <!-- iOS PWA SUPPORT -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="IsoFind" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- ICONS iOS -->
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-120.png" />
+
+    <!-- (optional nhưng tốt) -->
+    <meta name="description" content="IsoFind - Device Management System" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
