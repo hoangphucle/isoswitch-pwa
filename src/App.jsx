@@ -148,14 +148,31 @@ export default function App() {
 
   });
 
-  const currentUser = JSON.parse(
 
-    localStorage.getItem("user") || "null"
+  let currentUser = null;
 
-  );
+  let isAdmin = false;
 
-  const isAdmin =
-    currentUser?.role === "admin";
+  if (typeof window !== "undefined") {
+
+    try {
+
+      currentUser = JSON.parse(
+
+        localStorage.getItem("user") || "null"
+
+      );
+
+      isAdmin =
+        currentUser?.role === "admin";
+
+    } catch (err) {
+
+      console.error(err);
+
+    }
+
+  }
   const cardField = {
     padding: 12,
     borderRadius: 12,
