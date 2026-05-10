@@ -120,6 +120,7 @@ export default function App() {
   const [selectedDevice, setSelectedDevice] = useState(null);
   const [showAddModal, setShowAddModal] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
   const [showLoginModal, setShowLoginModal] =
     useState(false);
 
@@ -152,24 +153,6 @@ export default function App() {
 
 
 
-  if (typeof window !== "undefined") {
-
-    try {
-
-      currentUser = JSON.parse(
-
-        localStorage.getItem("user") || "null"
-
-      );
-
-
-    } catch (err) {
-
-      console.error(err);
-
-    }
-
-  }
   const cardField = {
     padding: 12,
     borderRadius: 12,
@@ -314,6 +297,8 @@ export default function App() {
         localStorage.getItem("user") || "null"
 
       );
+
+      setCurrentUser(user);
 
       if (user?.role === "admin") {
 
