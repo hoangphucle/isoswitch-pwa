@@ -151,7 +151,6 @@ export default function App() {
 
   let currentUser = null;
 
-  let isAdmin = false;
 
   if (typeof window !== "undefined") {
 
@@ -163,8 +162,6 @@ export default function App() {
 
       );
 
-      isAdmin =
-        currentUser?.role === "admin";
 
     } catch (err) {
 
@@ -682,7 +679,7 @@ export default function App() {
 
               <SearchForm onSearch={(q) => handleSearch(q, "device")} />
 
-              {isAdmin && (
+              {currentUser?.role === "admin" && (
 
                 <button
                   onClick={handleAddDevice}
